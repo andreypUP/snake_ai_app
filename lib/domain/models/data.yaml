@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 12
+names: ['Green Vine Snake', 'King Cobra', 'Rock Python', 'Russells Viper', 'Saw Scaled Viper', 'Trinket Snake', 'checkered keelback', 'cobra', 'common_krait', 'ratsnake', 'trinketsnake', 'wolf snake']
+
+roboflow:
+  workspace: vehicle-fxq6t
+  project: snake-classification-agtdn
+  version: 2
+  license: BY-NC-SA 4.0
+  url: https://universe.roboflow.com/vehicle-fxq6t/snake-classification-agtdn/dataset/2

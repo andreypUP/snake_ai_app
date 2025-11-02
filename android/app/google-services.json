@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "611628854955",
+    "project_id": "venom-shield-ph",
+    "storage_bucket": "venom-shield-ph.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:611628854955:android:9642a5dd55657a136451ee",
+        "android_client_info": {
+          "package_name": "com.example.venom_shield_ph"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "611628854955-ajjnu0a0s6grbf7ui2n09em45h2qlrh6.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.venom_shield_ph",
+            "certificate_hash": "0a029561dabdbea5d1b4383323ede58e16b5d00d"
+          }
+        },
+        {
+          "client_id": "611628854955-2h7fs7jb81lkg0dt5gtvhalukfdqtu06.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCjddmg-3ICiVaqGiehVfeSdgVBwPkgln0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "611628854955-2h7fs7jb81lkg0dt5gtvhalukfdqtu06.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
