@@ -2,8 +2,10 @@ import 'package:venom_shield_ph/presentation/pages/ai_cam.dart';
 import 'package:venom_shield_ph/presentation/pages/shell_page.dart';
 import 'package:venom_shield_ph/presentation/pages/report_page.dart';
 import 'package:venom_shield_ph/presentation/pages/map_page.dart';
+import 'package:venom_shield_ph/presentation/pages/profile_page.dart';
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
+
 part 'routes.g.dart';
 
 @TypedGoRoute<ShellPageRoute>(
@@ -20,6 +22,10 @@ part 'routes.g.dart';
     TypedGoRoute<MapPageRoute>(
       path: 'map_page',
       name: "map_page",
+    ),
+    TypedGoRoute<ProfilePageRoute>(
+      path: 'profile_page',
+      name: "profile_page",
     ),
   ],
 )
@@ -53,5 +59,14 @@ class MapPageRoute extends GoRouteData with $MapPageRoute {
   @override
   Widget build(BuildContext context, GoRouterState state) {
     return const MapPage();
+  }
+}
+
+
+@immutable
+class ProfilePageRoute extends GoRouteData with $ProfilePageRoute {
+  @override
+  Widget build(BuildContext context, GoRouterState state) {
+    return const ProfilePage();
   }
 }
