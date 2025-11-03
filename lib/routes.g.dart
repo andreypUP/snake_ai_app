@@ -27,6 +27,11 @@ RouteBase get $shellPageRoute => GoRouteData.$route(
       name: 'map_page',
       factory: $MapPageRoute._fromState,
     ),
+    GoRouteData.$route(
+      path: 'profile_page',
+      name: 'profile_page',
+      factory: $ProfilePageRoute._fromState,
+    ),
   ],
 );
 
@@ -95,6 +100,26 @@ mixin $MapPageRoute on GoRouteData {
 
   @override
   String get location => GoRouteData.$location('/map_page');
+
+  @override
+  void go(BuildContext context) => context.go(location);
+
+  @override
+  Future<T?> push<T>(BuildContext context) => context.push<T>(location);
+
+  @override
+  void pushReplacement(BuildContext context) =>
+      context.pushReplacement(location);
+
+  @override
+  void replace(BuildContext context) => context.replace(location);
+}
+
+mixin $ProfilePageRoute on GoRouteData {
+  static ProfilePageRoute _fromState(GoRouterState state) => ProfilePageRoute();
+
+  @override
+  String get location => GoRouteData.$location('/profile_page');
 
   @override
   void go(BuildContext context) => context.go(location);

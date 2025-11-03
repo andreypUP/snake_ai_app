@@ -106,6 +106,31 @@ class _ShellPageState extends State<ShellPage> {
   }
 
   Future<void> _handleSignOut() async {
+    // Show confirmation dialog
+    final bool? confirmed = await showDialog<bool>(
+      context: context,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          title: const Text('Sign Out'),
+          content: const Text('Are you sure you want to sign out?'),
+          actions: [
+            TextButton(
+              onPressed: () => Navigator.of(context).pop(false),
+              child: const Text('Cancel'),
+            ),
+            TextButton(
+              onPressed: () => Navigator.of(context).pop(true),
+              style: TextButton.styleFrom(foregroundColor: Colors.red),
+              child: const Text('Sign Out'),
+            ),
+          ],
+        );
+      },
+    );
+
+    // If user cancelled or closed the dialog
+    if (confirmed != true) return;
+
     setState(() {
       _isLoading = true;
     });
@@ -182,10 +207,24 @@ class _ShellPageState extends State<ShellPage> {
               title: Text(_isGuest ? 'Guest Mode' : 'Venom Shield PH'),
               actions: [
                 if (_currentUser != null && _currentUser!.photoURL != null)
-                  Padding(
-                    padding: const EdgeInsets.all(8.0),
-                    child: CircleAvatar(
-                      backgroundImage: NetworkImage(_currentUser!.photoURL!),
+                  GestureDetector(
+                    onTap: () => ProfilePageRoute().push(context),
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: CircleAvatar(
+                        backgroundImage: NetworkImage(_currentUser!.photoURL!),
+                      ),
+                    ),
+                  ),
+                if (_currentUser != null && _currentUser!.photoURL == null)
+                  GestureDetector(
+                    onTap: () => ProfilePageRoute().push(context),
+                    child: Padding(
+                      padding: const EdgeInsets.all(8.0),
+                      child: CircleAvatar(
+                        backgroundColor: Colors.green.shade700,
+                        child: const Icon(Icons.person, color: Colors.white),
+                      ),
                     ),
                   ),
                 if (_isGuest)

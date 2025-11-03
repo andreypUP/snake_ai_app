@@ -1,10 +1,17 @@
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:google_sign_in/google_sign_in.dart';
 import 'package:injectable/injectable.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 @singleton
 class AuthService {
   final FirebaseAuth _firebaseAuth = FirebaseAuth.instance;
+  final GoogleSignIn _googleSignIn = GoogleSignIn(
+    scopes: [
+      'email',
+      'profile',
+    ],
+  );
 
   static const String _keyIsLoggedIn = 'is_logged_in';
   static const String _keyUserId = 'user_id';
@@ -17,11 +24,25 @@ class AuthService {
 
   Future<UserCredential?> signInWithGoogle() async {
     try {
-      // Create a GoogleAuthProvider instance
-      final GoogleAuthProvider googleProvider = GoogleAuthProvider();
+      // Trigger the native Google Sign-In account picker
+      final GoogleSignInAccount? googleUser = await _googleSignIn.signIn();
 
-      // Sign in with popup/redirect (web) or native flow (mobile)
-      final userCredential = await _firebaseAuth.signInWithProvider(googleProvider);
+      // If user cancels the sign-in
+      if (googleUser == null) {
+        return null;
+      }
+
+      // Obtain the auth details from the request
+      final GoogleSignInAuthentication googleAuth = await googleUser.authentication;
+
+      // Create a new credential
+      final credential = GoogleAuthProvider.credential(
+        accessToken: googleAuth.accessToken,
+        idToken: googleAuth.idToken,
+      );
+
+      // Sign in to Firebase with the Google credential
+      final userCredential = await _firebaseAuth.signInWithCredential(credential);
 
       // Save login state to SharedPreferences
       if (userCredential.user != null) {
@@ -36,6 +57,9 @@ class AuthService {
 
   Future<void> signOut() async {
     try {
+      // Sign out from Google Sign-In
+      await _googleSignIn.signOut();
+      // Sign out from Firebase
       await _firebaseAuth.signOut();
       // Clear login state from SharedPreferences
       await _clearLoginState();
