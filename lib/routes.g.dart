@@ -32,6 +32,26 @@ RouteBase get $shellPageRoute => GoRouteData.$route(
       name: 'profile_page',
       factory: $ProfilePageRoute._fromState,
     ),
+    GoRouteData.$route(
+      path: 'classification_reports',
+      name: 'classification_reports',
+      factory: $ClassificationReportListPageRoute._fromState,
+    ),
+    GoRouteData.$route(
+      path: 'classification_report/:reportId',
+      name: 'classification_report_detail',
+      factory: $ClassificationReportDetailPageRoute._fromState,
+    ),
+    GoRouteData.$route(
+      path: 'snake_classes',
+      name: 'snake_classes',
+      factory: $SnakeClassListPageRoute._fromState,
+    ),
+    GoRouteData.$route(
+      path: 'snake_class/:snakeId',
+      name: 'snake_class_detail',
+      factory: $SnakeClassDetailPageRoute._fromState,
+    ),
   ],
 );
 
@@ -120,6 +140,101 @@ mixin $ProfilePageRoute on GoRouteData {
 
   @override
   String get location => GoRouteData.$location('/profile_page');
+
+  @override
+  void go(BuildContext context) => context.go(location);
+
+  @override
+  Future<T?> push<T>(BuildContext context) => context.push<T>(location);
+
+  @override
+  void pushReplacement(BuildContext context) =>
+      context.pushReplacement(location);
+
+  @override
+  void replace(BuildContext context) => context.replace(location);
+}
+
+mixin $ClassificationReportListPageRoute on GoRouteData {
+  static ClassificationReportListPageRoute _fromState(GoRouterState state) =>
+      ClassificationReportListPageRoute();
+
+  @override
+  String get location => GoRouteData.$location('/classification_reports');
+
+  @override
+  void go(BuildContext context) => context.go(location);
+
+  @override
+  Future<T?> push<T>(BuildContext context) => context.push<T>(location);
+
+  @override
+  void pushReplacement(BuildContext context) =>
+      context.pushReplacement(location);
+
+  @override
+  void replace(BuildContext context) => context.replace(location);
+}
+
+mixin $ClassificationReportDetailPageRoute on GoRouteData {
+  static ClassificationReportDetailPageRoute _fromState(GoRouterState state) =>
+      ClassificationReportDetailPageRoute(
+        reportId: state.pathParameters['reportId']!,
+      );
+
+  ClassificationReportDetailPageRoute get _self =>
+      this as ClassificationReportDetailPageRoute;
+
+  @override
+  String get location => GoRouteData.$location(
+    '/classification_report/${Uri.encodeComponent(_self.reportId)}',
+  );
+
+  @override
+  void go(BuildContext context) => context.go(location);
+
+  @override
+  Future<T?> push<T>(BuildContext context) => context.push<T>(location);
+
+  @override
+  void pushReplacement(BuildContext context) =>
+      context.pushReplacement(location);
+
+  @override
+  void replace(BuildContext context) => context.replace(location);
+}
+
+mixin $SnakeClassListPageRoute on GoRouteData {
+  static SnakeClassListPageRoute _fromState(GoRouterState state) =>
+      SnakeClassListPageRoute();
+
+  @override
+  String get location => GoRouteData.$location('/snake_classes');
+
+  @override
+  void go(BuildContext context) => context.go(location);
+
+  @override
+  Future<T?> push<T>(BuildContext context) => context.push<T>(location);
+
+  @override
+  void pushReplacement(BuildContext context) =>
+      context.pushReplacement(location);
+
+  @override
+  void replace(BuildContext context) => context.replace(location);
+}
+
+mixin $SnakeClassDetailPageRoute on GoRouteData {
+  static SnakeClassDetailPageRoute _fromState(GoRouterState state) =>
+      SnakeClassDetailPageRoute(snakeId: state.pathParameters['snakeId']!);
+
+  SnakeClassDetailPageRoute get _self => this as SnakeClassDetailPageRoute;
+
+  @override
+  String get location => GoRouteData.$location(
+    '/snake_class/${Uri.encodeComponent(_self.snakeId)}',
+  );
 
   @override
   void go(BuildContext context) => context.go(location);

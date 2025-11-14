@@ -1,0 +1,119 @@
+[
+  {
+    "id": "1",
+    "name": "Jose B. Lingad Memorial General Hospital",
+    "unit": "Poison Control Unit",
+    "address": "Mac Arthur Highway, San Fernando, Pampanga 2000",
+    "latitude": 15.0262,
+    "longitude": 120.6897,
+    "contact": [
+      "(045) 9632279",
+      "09338746600",
+      "09234117107"
+    ],
+    "email": "jblmrhtoxicology@gmail.com",
+    "toxicologist": "Dr. Leslie Garcia (Head)",
+    "provinces": ["Aurora", "Bataan", "Bulacan", "Nueva Ecija", "Pampanga", "Tarlac", "Zambales", "Quirino", "Nueva Vizcaya"]
+  },
+  {
+    "id": "2",
+    "name": "Batangas Medical Center",
+    "unit": "Poison Control Center",
+    "address": "Bihi Road, Kumintang Ibaba, Batangas City 4200",
+    "latitude": 13.7565,
+    "longitude": 121.0583,
+    "contact": [
+      "(043) 7408307 loc 1104",
+      "09218832633"
+    ],
+    "email": "toxfoura@yahoo.com",
+    "toxicologist": "Dr. Rhodora Madrid Reyes (Head)",
+    "provinces": ["Batangas", "Cavite", "Laguna", "Quezon"]
+  },
+  {
+    "id": "3",
+    "name": "Bicol Medical Center",
+    "unit": "Poison Control Unit",
+    "address": "BMC Road, Concepcion Pequeña, Naga City, Camarines Sur 4400",
+    "latitude": 13.6218,
+    "longitude": 123.1948,
+    "contact": [
+      "09165354692",
+      "09480161575"
+    ],
+    "email": "bmcpcu@gmail.com",
+    "toxicologist": "Dr. Janeta Froyalde (Head)",
+    "provinces": ["Albay", "Camarines Norte", "Camarines Sur", "Catanduanes", "Sorsogon", "Masbate"]
+  },
+  {
+    "id": "4",
+    "name": "Corazon Locsin Montelibano Memorial Regional Hospital",
+    "unit": "Biomarine and Toxicology Unit",
+    "address": "Lacson St, Bacolod City, Negros Occidental 6100",
+    "latitude": 10.6764,
+    "longitude": 122.9506,
+    "contact": [
+      "09178694510"
+    ],
+    "email": "clmmrh.toxicology@gmail.com",
+    "toxicologist": "Dr. Cherie Grace Quingking (Head)",
+    "provinces": ["Negros Oriental", "Negros Occidental"]
+  },
+  {
+    "id": "5",
+    "name": "Western Visayas Sanitarium",
+    "unit": "Poison Control Unit",
+    "address": "Brgy. Inangayan, Santa Barbara, Iloilo 5002",
+    "latitude": 10.8272,
+    "longitude": 122.5333,
+    "contact": [
+      "09194980443"
+    ],
+    "email": "wvstoxunit@gmail.com",
+    "toxicologist": "Dr. Armie S. Gutierrez (Head)",
+    "provinces": ["Iloilo", "Antique", "Aklan", "Capiz", "Guimaras"]
+  },
+  {
+    "id": "6",
+    "name": "Vicente Sotto Memorial Medical Center",
+    "unit": "Poison Control Center",
+    "address": "B. Rodriguez St, Sambag II, Cebu City 6000",
+    "latitude": 10.3157,
+    "longitude": 123.9019,
+    "contact": [
+      "09228496542"
+    ],
+    "email": "cebutoxcenter@gmail.com",
+    "toxicologist": "Dr. Beethoven Bongon (Head)",
+    "provinces": ["Cebu", "Siquijor", "Bohol"]
+  },
+  {
+    "id": "7",
+    "name": "Eastern Visayas Regional Medical Center",
+    "unit": "Poison Control Center",
+    "address": "Tacloban City, Leyte 6500",
+    "latitude": 11.2436,
+    "longitude": 125.0048,
+    "contact": [
+      "(053) 8320308"
+    ],
+    "email": "evrmc.pcc@gmail.com",
+    "toxicologist": "Dr. Maria Lourdes Agosto (Head)",
+    "provinces": ["Leyte", "Samar", "Biliran", "Dinagat Island"]
+  },
+  {
+    "id": "8",
+    "name": "Zamboanga City Medical Center",
+    "unit": "Poison Control Center",
+    "address": "Dr Evangelista Street, Sta. Catalina, Zamboanga City, Zamboanga del Sur 7000",
+    "latitude": 6.9214,
+    "longitude": 122.0790,
+    "contact": [
+      "(062) 9912934",
+      "(062) 9920052"
+    ],
+    "email": "zcmc.pcc@gmail.com",
+    "toxicologist": "Dr. Aeesha Yacob - Pingli (Head)",
+    "provinces": ["Zamboanga del Norte", "Zamboanga Sibugay", "Zamboanga del Sur", "Basilan", "Lanao del Sur", "Maguindanao", "Sulu", "Tawi-Tawi"]
+  }
+]

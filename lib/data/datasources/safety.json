@@ -1,0 +1,55 @@
+{
+  "title": "Safety Awareness for Snake Encounters",
+  "sections": {
+    "signs_and_symptoms": {
+      "description": "Depend on the type of snake, but may include:",
+      "list": [
+        "Bleeding from wound",
+        "Blurred vision",
+        "Burning of the skin",
+        "Convulsions",
+        "Diarrhea",
+        "Dizziness",
+        "Excessive sweating",
+        "Fainting",
+        "Fang marks in the skin",
+        "Fever",
+        "Increased thirst",
+        "Collapse (hypotension, shock)",
+        "Nausea",
+        "Vomiting",
+        "Severe headache",
+        "\"Heaviness\" of the eyelids",
+        "Inappropriate drowsiness"
+      ]
+    },
+    "treatment": {
+      "description": "First aid treatment is carried out immediately or very soon after the bite before the patient reaches a dispensary or hospital.",
+      "steps": [
+        "Reassure the victim who may be very anxious.",
+        "Immobilize the whole of the patient's body by laying him/her down in a comfortable and safe position. Make sure to immobilize the bitten limb with a splint or sling. Apply pressure if necessary.",
+        "Avoid any interference with the bite wound (incisions, rubbing, vigorous cleaning, massage, application of herbs or chemicals) as this may introduce infection, increase absorption of the venom, and increase local bleeding.",
+        "Bring the patient to the hospital immediately.",
+        "Antivenom is the only effective antidote for snake venom."
+      ]
+    },
+    "donts": {
+      "list": [
+        "Do not make the patient tired.",
+        "Do not use tourniquet.",
+        "Do not use ice pack on the bite marks.",
+        "Do not puncture, pinch, or scrape the bitten area.",
+        "Do not suck venom from the patient's wound.",
+        "Do not give medication not prescribed by the doctor.",
+        "Do not elevate the wound at the same level or higher than the chest/heart area."
+      ]
+    },
+    "reference": {
+      "sources": [
+        "World Health Organization (WHO) - Guidelines for the Management of Snake Bites",
+        "University of Maryland Medical Center (2010). Snakebite Symptoms. Retrieved from http://www.umm.edu/ency/article/000031sym.htm",
+        "Image from http://yxhealth.com/fitness-equipment/first-aid-for-snake-bite/"
+      ]
+    }
+  }
+}
