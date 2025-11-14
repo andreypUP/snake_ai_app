@@ -11,8 +11,8 @@ class Hospital {
   final double latitude;
   final double longitude;
   final List<String> contact;
-  final String email;
-  final String toxicologist;
+  final String? email;
+  final String? toxicologist;
   final List<String> provinces;
 
   Hospital({

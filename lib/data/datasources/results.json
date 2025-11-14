@@ -1,468 +1,588 @@
 {
-"snakes": [
-{
-"common_name": "Barred coral snake",
-"scientific_classification": "Venomous elapid (Hemibungarus calligaster)",
-"description": "Slender elapid with black body and red/white bands, distinctive eye stripe",
-"geographic_range": "Philippines (endemic)",
-"behavior": "Secretive, burrowing, avoids confrontation, bites only when provoked",
-"habitat": "Lowland moist forests, gardens, low hills, burrowing in leaf litter",
-"diet": "Small burrowing snakes (worm snakes, blind snakes)",
-"reproduction": "Oviparous",
-"venom_toxicity": "MODERATE RISK - Neurotoxic (affects nervous system, respiratory difficulties). Rare human contact.",
-"lifespan": "10-15 years",
-"conservation_status": "Least Concern",
-"references": [
-"https://en.wikipedia.org/wiki/Hemibungarus",
-"https://www.inaturalist.org/guide_taxa/1180844",
-"https://cebudailynews.inquirer.net/563391/barred-coral-snake-seen-in-cebu-beauty-and-death-rolled-into-one"
-]
-},
-{
-"common_name": "Boie's keelback, Northern water snake",
-"scientific_classification": "Mildly venomous colubrid (Rhabdophis spilogaster)",
-"description": "Slender, semi-aquatic snake with varied coloration (green, red, orange, white, black markings)",
-"geographic_range": "Philippines (Catanduanes, Polillo, Calayan, Luzon)",
-"behavior": "Secretive, semi-aquatic, defensive when approached",
-"habitat": "Near water sources, streams, wetland areas, farmland",
-"diet": "Fish, frogs, invertebrates",
-"reproduction": "Oviparous",
-"venom_toxicity": "MILD RISK - Hemotoxic via nuchal glands (limited human risk)",
-"lifespan": "~10 years",
-"conservation_status": "Data Deficient",
-"references": [
-"https://www.inaturalist.org/taxa/28833-Rhabdophis-spilogaster",
-"https://observation.org/species/102803/",
-"http://reptile-database.reptarium.cz/Tropidonophis/spilogaster"
-]
-},
-{
-"common_name": "Dog-toothed cat snake, Large blunt-headed tree snake",
-"scientific_classification": "Mildly venomous colubrid (Boiga cynodon)",
-"description": "Large snake over 2m, orange-brown with white-edged dark bars, enlarged front teeth, vertical pupil 'cat eyes'",
-"geographic_range": "Southeast Asia and Philippines (Thailand, Malaysia, Singapore, Philippines, Indonesia)",
-"behavior": "Arboreal, nocturnal, defensive, ambush predator",
-"habitat": "Lowland and secondary forests, forest edge, adapted to disturbed habitats",
-"diet": "Birds, eggs, lizards, bats; pursues prey using jaws and tail",
-"reproduction": "Oviparous (6-12 eggs per clutch)",
-"venom_toxicity": "MILD RISK - Neurotoxic (rear-fanged); potent but effects reversible with neostigmine",
-"lifespan": "~10-15 years",
-"conservation_status": "Least Concern",
-"references": [
-"https://en.wikipedia.org/wiki/Boiga_cynodon",
-"https://www.thainationalparks.com/species/boiga-cynodon",
-"https://www.ecologyasia.com/verts/snakes/dog-toothed_cat-snake.htm",
-"https://kids.kiddle.co/Dog-toothed_cat_snake"
-]
-},
-{
-"common_name": "Gervais' worm snake, Philippine dwarf snake",
-"scientific_classification": "Non-venomous colubrid (Calamaria gervaisii)",
-"description": "Small fossorial snake, max 25.5 cm total length; brown-black with pale underbelly",
-"geographic_range": "Philippines (endemic) - Basilan, Catanduanes, Cebu, Mindanao, Mindoro, Negros, Panay, Luzon",
-"behavior": "Fossorial (burrowing), rarely seen, cryptic",
-"habitat": "Forest litter, plantations, under stones, between tree buttresses; near sea level to 1000m elevation",
-"diet": "Earthworms, small invertebrates",
-"reproduction": "Oviparous",
-"venom_toxicity": "NONE - Non-venomous",
-"lifespan": "~5-10 years",
-"conservation_status": "Least Concern",
-"references": [
-"https://en.wikipedia.org/wiki/Calamaria_gervaisii",
-"https://animalia.bio/calamaria-gervaisii",
-"https://www.inaturalist.org/taxa/96412-Calamaria-gervaisii",
-"https://www.inaturalist.org/guide_taxa/1180852"
-]
-},
-{
-"common_name": "Günther's Philippine shrub snake, Banded Philippine burrowing snake",
-"scientific_classification": "Non-venomous (Oxyrhabdium leporinum)",
-"description": "Small burrowing snake endemic to Philippines",
-"geographic_range": "Philippines (endemic) - Luzon, Mindoro, Cebu, Negros, Panay",
-"behavior": "Secretive, non-aggressive, burrowing",
-"habitat": "Forest habitat, burrows",
-"diet": "Small prey, burrowing animals",
-"reproduction": "Oviparous",
-"venom_toxicity": "NONE - Non-venomous",
-"lifespan": "~10 years",
-"conservation_status": "Least Concern",
-"references": [
-"https://en.wikipedia.org/wiki/Oxyrhabdium_leporinum",
-"https://www.fws.gov/species/gunthers-philippine-shrub-snake-oxyrhabdium-leporinum",
-"https://www.inaturalist.org/taxa/29174-Oxyrhabdium-leporinum"
-]
-},
-{
-"common_name": "King cobra",
-"scientific_classification": "Highly venomous elapid (Ophiophagus hannah)",
-"description": "World's longest venomous snake; average 3.18-4m, record 5.85m; diverse coloration from black with stripes to brown-grey",
-"geographic_range": "Indian Subcontinent through Southeast Asia to southern China (widespread)",
-"behavior": "Solitary, daytime hunter, can expand distinctive hood, produces deep resonant hiss, protects eggs",
-"habitat": "Forests, fields, villages, water-adjacent areas",
-"diet": "Preys almost exclusively on other snakes; dominant predators are humans",
-"reproduction": "Oviparous; only ophidian building above-ground egg nest, female protects throughout incubation",
-"venom_toxicity": "EXTREME RISK - Neurotoxic (primary neurotoxins target respiratory centers). Single bite delivers enough venom for 20 humans/elephant. Causes respiratory failure, cardiac arrest.",
-"lifespan": "Up to 20 years in wild",
-"conservation_status": "Vulnerable",
-"references": [
-"https://en.wikipedia.org/wiki/King_cobra",
-"https://www.britannica.com/animal/king-cobra",
-"https://www.nationalgeographic.com/animals/reptiles/facts/king-cobra",
-"https://nationalzoo.si.edu/animals/king-cobra"
-]
-},
-{
-"common_name": "Luzon dwarf snake, Philippine dwarf snake",
-"scientific_classification": "Non-venomous (Calamaria bitorques)",
-"description": "Small fossorial snake; characterized by 2-6 dark crossbands behind head",
-"geographic_range": "Philippines (endemic) - Luzon and Panay",
-"behavior": "Fossorial, cryptic, rarely encountered",
-"habitat": "Forest floor, burrowing",
-"diet": "Small invertebrates, earthworms",
-"reproduction": "Oviparous",
-"venom_toxicity": "NONE - Non-venomous",
-"lifespan": "~5-10 years",
-"conservation_status": "Least Concern",
-"references": [
-"https://en.wikipedia.org/wiki/Calamaria_bitorques",
-"https://www.fws.gov/species/luzon-dwarf-snake-calamaria-bitorques",
-"http://reptile-database.reptarium.cz/Calamaria/bitorques"
-]
-},
-{
-"common_name": "Mangrove snake, Gold-ringed cat snake",
-"scientific_classification": "Mildly venomous colubrid (Boiga dendrophila)",
-"description": "One of largest cat snakes, averaging 8-9 feet (2.4-2.7m); slender black with narrow yellow bands around face and body",
-"geographic_range": "Southeast Asia (Thailand, Malaysia, Singapore, Philippines, Indonesia)",
-"behavior": "Nocturnal, arboreal, spends days coiled in mangrove branches near rivers/coastal waters",
-"habitat": "Riverine mangrove forests, coastal mangrove swamps, overhanging waters",
-"diet": "Birds (primary prey - venom effective on avian muscle), rodents, lizards, bird eggs",
-"reproduction": "Oviparous",
-"venom_toxicity": "MILD RISK - Mildly venomous (denmotoxin); can cause painful swelling/discoloration but not lethal to humans",
-"lifespan": "~12-15 years",
-"conservation_status": "Least Concern",
-"references": [
-"https://en.wikipedia.org/wiki/Boiga_dendrophila",
-"https://nationalzoo.si.edu/animals/mangrove-snake",
-"https://www.britannica.com/animal/mangrove-snake"
-]
-},
-{
-"common_name": "Müller's wolf snake",
-"scientific_classification": "Non-venomous colubrid (Lycodon muelleri)",
-"description": "Non-venomous colubrid with divided nasals, transverse light bands on body and tail",
-"geographic_range": "Philippines (Batan, Luzon, Mindoro, Polillo)",
-"behavior": "Secretive, terrestrial",
-"habitat": "Forest floor, leaf litter",
-"diet": "Small vertebrates, insects",
-"reproduction": "Oviparous",
-"venom_toxicity": "NONE - Non-venomous",
-"lifespan": "~10 years",
-"conservation_status": "Least Concern",
-"references": [
-"http://reptile-database.reptarium.cz/Lycodon/muelleri",
-"https://www.inaturalist.org/taxa/29561-Lycodon-muelleri",
-"https://www.ecologyasia.com/pdf/2018/seavr2018-026(p060-061).pdf"
-]
-},
-{
-"common_name": "North Philippine temple pit viper, Bornean keeled green pit viper, Banded keel-throated pit viper",
-"scientific_classification": "Venomous pitviper (Tropidolaemus subannulatus)",
-"description": "Bright green with thin crossbands in blue, red, or white; females larger (96cm) than males (46cm); juveniles/males red-dotted, females blue or red",
-"geographic_range": "Southeast Asia (Brunei, Indonesia, Malaysia, Philippines including Cebu, Luzon, Panay, Leyte, Samar, Palawan)",
-"behavior": "Arboreal with prehensile tail, vegetation dweller up to 20m height",
-"habitat": "Lowland rainforests, low vegetation",
-"diet": "Birds, small mammals, frogs",
-"reproduction": "Ovoviviparous (live young)",
-"venom_toxicity": "MODERATE RISK - Neurotoxic and hemotoxic (predominantly neurotoxic with hemotoxic component). Localized effects, rarely systemic, not known fatal.",
-"lifespan": "~12-15 years",
-"conservation_status": "Data Deficient",
-"references": [
-"https://en.wikipedia.org/wiki/Tropidolaemus_subannulatus",
-"https://www.inaturalist.org/taxa/114568-Tropidolaemus-subannulatus",
-"https://www.ukdr.uplb.edu.ph/journal-articles/241/"
-]
-},
-{
-"common_name": "Northern short-headed snake",
-"scientific_classification": "Non-venomous colubrid (Oligodon ancorus)",
-"description": "Small colubrid endemic to Philippines",
-"geographic_range": "Philippines (endemic) - Mindoro and Luzon; possibly Sumatra (contested)",
-"behavior": "Terrestrial, secretive",
-"habitat": "Coastal forests, mid-montane tropical forests, secondary growth; sea level to 600m elevation",
-"diet": "Small prey, eggs",
-"reproduction": "Oviparous",
-"venom_toxicity": "NONE - Non-venomous",
-"lifespan": "~10 years",
-"conservation_status": "Near Threatened",
-"references": [
-"https://en.wikipedia.org/wiki/Oligodon_ancorus",
-"https://kids.kiddle.co/Northern_short-headed_snake",
-"https://inaturalist.nz/taxa/73877-Oligodon-ancorus"
-]
-},
-{
-"common_name": "Paradise tree snake, Paradise flying snake, Garden flying snake",
-"scientific_classification": "Mildly venomous colubrid (Chrysopelea paradisi)",
-"description": "Slender body with dark-edged yellow scales creating flower-petal patterns; red/orange/yellow coloring on dorsal surface; green specimens without bright markings also exist",
-"geographic_range": "Southeast Asia and beyond (Thailand, Cambodia, Indonesia, Brunei, India-Andaman, Malaysia, Myanmar, Philippines, Singapore)",
-"behavior": "Diurnal, arboreal, excellent climber favoring coconut palms; remarkable gliding ability (10m+ distances) via rib flaring and serpentine motion",
-"habitat": "Moist forests, plantations, villages, rural gardens, coconut groves",
-"diet": "Tree-dwelling lizards, bats",
-"reproduction": "Oviparous (5-11 eggs)",
-"venom_toxicity": "MILD RISK - Mildly venomous, rear-fanged; can also constrict prey",
-"lifespan": "~12-15 years",
-"conservation_status": "Least Concern",
-"references": [
-"https://en.wikipedia.org/wiki/Chrysopelea_paradisi",
-"https://www.thainationalparks.com/species/chrysopelea-paradisi",
-"https://animalia.bio/paradise-tree-snake",
-"https://www.ecologyasia.com/verts/snakes/paradise_tree-snake.htm"
-]
-},
-{
-"common_name": "Philippine blunt-headed cat snake, Leyte cat snake, Philippine blunt-headed tree snake",
-"scientific_classification": "Mildly venomous colubrid (Boiga angulata)",
-"description": "Short blunt brown head distinct from neck, very large eyes with vertical pupils, slender laterally compressed body, light brown with dark transverse blotches",
-"geographic_range": "Philippines (endemic) - Bohol, Catanduanes, Leyte, Luzon, Mindanao, Negros, Polillo, Samar, Panay, Romblon, Tablas",
-"behavior": "Fully arboreal, ambush predator",
-"habitat": "Lowland and montane tropical moist forests, disturbed habitats",
-"diet": "Birds, eggs, flying lizards, geckoes",
-"reproduction": "Oviparous",
-"venom_toxicity": "MILD RISK - Mildly venomous (rear-fanged)",
-"lifespan": "~10-15 years",
-"conservation_status": "Least Concern",
-"references": [
-"https://en.wikipedia.org/wiki/Boiga_angulata",
-"https://www.inaturalist.org/taxa/27711-Boiga-angulata",
-"http://www.wildalert.ph/s/267",
-"https://animalia.bio/boiga-angulata"
-]
-},
-{
-"common_name": "Philippine bronzeback treesnake, Philippines bronzeback, Striped bronzeback",
-"scientific_classification": "Non-venomous colubrid (Dendrelaphis philippinensis)",
-"description": "Arboreal colubrid with distinctive coloration",
-"geographic_range": "Philippines (endemic and Micronesia-Saipan)",
-"behavior": "Fully arboreal, fast-moving",
-"habitat": "Trees, arboreal habitats",
-"diet": "Lizards, small prey",
-"reproduction": "Oviparous",
-"venom_toxicity": "NONE - Non-venomous",
-"lifespan": "~12 years",
-"conservation_status": "Least Concern",
-"references": [
-"https://en.wikipedia.org/wiki/Dendrelaphis_philippinensis",
-"http://reptile-database.reptarium.cz/Dendrelaphis/philippinensis",
-"https://www.inaturalist.org/taxa/146086-Dendrelaphis-philippinensis"
-]
-},
-{
-"common_name": "Philippine cat snake, Tawny cat-eyed snake",
-"scientific_classification": "Mildly venomous colubrid (Boiga philippina)",
-"description": "Very slender up to 213cm (7ft); big head with large cat-like elliptical pupils, white chin extending to half-body, tan/light brown/coffee/pale orange body",
-"geographic_range": "Philippines (endemic) - Luzon, Camiguin Norte, Babuyan Claro, Dalupiri; 50-800m elevation",
-"behavior": "Highly nocturnal, nervous when alarmed, strikes repeatedly when defensive, raises head and expands neck scales",
-"habitat": "Pristine and disturbed old-growth tropical forests, secondary forest, forest edge",
-"diet": "Voracious hunter - primarily birds and fledglings, near chicken coops, may enter homes, frogs, lizards, rodents",
-"reproduction": "Mating November-January; females lay 6-14 eggs in tree trunk holes; males slender with bright coloration; females stouter/duller",
-"venom_toxicity": "MILD RISK - Mildly venomous (slightly stronger than most Boiga); rounded mouth unlikely to cause envenomation",
-"lifespan": "Up to 15 years in captivity",
-"conservation_status": "Least Concern",
-"references": [
-"https://en.wikipedia.org/wiki/Boiga_philippina",
-"https://www.inaturalist.org/taxa/27642-Boiga-philippina",
-"https://animalia.bio/boiga-philippina"
-]
-},
-{
-"common_name": "Philippine cobra, Northern Philippine cobra",
-"scientific_classification": "Highly venomous spitting cobra (Naja philippinensis)",
-"description": "Stocky, highly venomous spitting cobra; called 'ulupong' in Tagalog",
-"geographic_range": "Northern Philippines (Luzon, Mindoro, Catanduanes, Masbate)",
-"behavior": "Solitary, mainly terrestrial, nocturnal, ambush predator; extremely fast and agile; rise upwards and produce hood when threatened; spit venom to 3m",
-"habitat": "Lowland habitats, burrows, rocks, rice fields",
-"diet": "Small mammals (rats/mice primary), frogs, other snakes, eggs, birds",
-"reproduction": "Breed year-round; females lay 10-20 eggs; hatchlings independent when hatched",
-"venom_toxicity": "EXTREME RISK - Neurotoxic postsynaptic (one of most toxic Naja venoms). Pure neurotoxin, no necrotizing components. Murine LD50 0.18 mg/kg. Minimal local signs; complete respiratory failure in <30 minutes possible.",
-"lifespan": "~15-20 years",
-"conservation_status": "Threatened",
-"references": [
-"https://en.wikipedia.org/wiki/Philippine_cobra",
-"https://a-z-animals.com/animals/philippine-cobra/",
-"https://animalia.bio/philippine-cobra",
-"https://www.sciencedirect.com/science/article/abs/pii/S1874391919301903"
-]
-},
-{
-"common_name": "Philippine pit viper",
-"scientific_classification": "Highly venomous pitviper (Trimeresurus flavomaculatus)",
-"description": "Highly venomous pitviper with specific scalation patterns",
-"geographic_range": "Philippines (endemic) - Agutayan, Batan, Camiguin, Catanduanes, Dinagat, Jolo, Leyte, Luzon, Mindanao, Mindoro, Negros, Panay, Polillo",
-"behavior": "Arboreal, often perching on branches; proficient ambush predator; can descend to ground hunting frogs; nocturnal; typically not aggressive but defends when cornered",
-"habitat": "Lowland moist forests, forest edges, plantations",
-"diet": "Small mammals, lizards, frogs, birds",
-"reproduction": "Ovoviviparous (10-20 live young per litter)",
-"venom_toxicity": "EXTREME RISK - One of world's most venomous snakes with no specific antivenom yet available",
-"lifespan": "~12-15 years",
-"conservation_status": "Least Concern",
-"references": [
-"https://en.wikipedia.org/wiki/Trimeresurus_flavomaculatus",
-"https://animalia.bio/philippine-pit-viper",
-"https://www.inaturalist.org/taxa/30944-Trimeresurus-flavomaculatus",
-"https://www.inaturalist.org/guide_taxa/1180825"
-]
-},
-{
-"common_name": "Philippine stripe-lipped snake, Philippine cylindrical snake",
-"scientific_classification": "Non-venomous (Hologerrhum philippinum)",
-"description": "Small colubrid endemic to Philippines",
-"geographic_range": "Philippines (endemic) - Luzon and Polillo",
-"behavior": "Secretive, rarely encountered",
-"habitat": "Forest habitats",
-"diet": "Small prey",
-"reproduction": "Oviparous",
-"venom_toxicity": "NONE - Non-venomous",
-"lifespan": "~10 years",
-"conservation_status": "Least Concern",
-"references": [
-"https://en.wikipedia.org/wiki/Hologerrhum_dermali",
-"https://www.fws.gov/species/philippine-stripe-lipped-snake-hologerrhum-philippinum",
-"http://reptile-database.reptarium.cz/Hologerrhum/philippinum"
-]
-},
-{
-"common_name": "Philippine whipsnake, Keel-bellied whipsnake",
-"scientific_classification": "Mildly venomous colubrid (Dryophiops philippina)",
-"description": "3-6 feet long; dark brown/black with light green/pale blue flecks, bright red tongue, cream lateral stripes bisected by dark lines",
-"geographic_range": "Philippines (endemic) - Luzon (Bataan), Mindoro, Sibuyan, Panay, eastern Mindanao (Diuata Range)",
-"behavior": "Cathemeral (day/night active); docile but nervous; springs up to flee or remains motionless; expands neck showing coloration; moves in sidewinding manner",
-"habitat": "Primary and secondary lowland tropical forests, forest floor among leaf litter",
-"diet": "Specialized hunter - primarily geckos and lizards; may also eat frogs, fish, slugs",
-"reproduction": "Parthenogenic (rare in snakes - majority females). Mating November-January; 2-6 eggs per clutch; sperm storage reported",
-"venom_toxicity": "MILD RISK - Mildly venomous (rear-fanged); small mouth unlikely to cause problems; no fatalities reported",
-"lifespan": "~8-12 years",
-"conservation_status": "Vulnerable",
-"references": [
-"https://en.wikipedia.org/wiki/Dryophiops_philippina",
-"https://animalia.bio/dryophiops-philippina",
-"https://www.inaturalist.org/taxa/26795-Dryophiops-philippina",
-"https://www.jungledragon.com/image/50750/philippine_whipsnake.html"
-]
-},
-{
-"common_name": "Red-tailed green rat snake, Arboreal ratsnake, Red-tailed racer",
-"scientific_classification": "Non-venomous colubrid (Gonyosoma oxycephalum)",
-"description": "Bright/light green or gray morph (Panay, Philippines); red/brown tail; dark horizontal eye line; black tongue with brown/blue sides; head yellow-green/green/yellow",
-"geographic_range": "Southeast Asia (Indonesia, Malaysia, Singapore, India-Andamans, Myanmar, Thailand, Cambodia, Laos, Vietnam, Philippines)",
-"behavior": "Arboreal, spends life in trees/cavities, seldom descends; inflates neck when stressed; unpredictable temperament, may strike or bite",
-"habitat": "Trees, tree cavities, arboreal life",
-"diet": "Birds, lizards, bats, frogs, arboreal rodents, bird eggs",
-"reproduction": "Oviparous",
-"venom_toxicity": "NONE - Non-venomous",
-"lifespan": "~15-20 years",
-"conservation_status": "Least Concern",
-"references": [
-"https://en.wikipedia.org/wiki/Gonyosoma_oxycephalum",
-"https://www.inaturalist.org/taxa/29992-Gonyosoma-oxycephalum",
-"https://www.khaosok.com/national-park/red-tailed-green-ratsnake/",
-"https://fwzoo.com/animals/red-tailed-green-rat-snake/"
-]
-},
-{
-"common_name": "Reddish rat snake, Philippine rat snake",
-"scientific_classification": "Non-venomous colubrid (Coelognathus erythrurus)",
-"description": "Long slender snake up to 1.7m; brownish-red coloration; reddish tail; faint eye-to-jaw stripe; light bands on juveniles fade with age",
-"geographic_range": "Philippines",
-"behavior": "Move around daytime but active nighttime; lifts front body S-shape when threatened; defensive display to scare; bites only if too close",
-"habitat": "Forest edges, near fields/farmland, tree holes, ground holes, caves, abandoned buildings",
-"diet": "Rats, mice (primary), lizards, small birds; hunts by smell following scent trails; kills by constriction",
-"reproduction": "Oviparous",
-"venom_toxicity": "NONE - Non-venomous; kills prey by constriction",
-"lifespan": "~15 years",
-"conservures": "Least Concern",
-"references": [
-"https://en.wikipedia.org/wiki/Philippine_rat_snake",
-"https://animalsoftanay.home.blog/2019/03/25/reddish-rat-snake/",
-"https://www.inaturalist.org/taxa/30274-Coelognathus-erythrurus"
-]
-},
-{
-"common_names": [
-"Reinhardt’s lined snake",
-"Northern triangle-spotted snake"
-],
-"scientific_classification": {
-"venom": "Non-venomous",
-"scientific_name": "Cyclocorus lineatus",
-"family": "Cyclocoridae"
-},
-"description": "Small, slender ground-dweller averaging 40 cm (max ~48 cm); gray-brown back with faint dark lines, yellowish or white belly with black blotches, and tiny white dots along the belly sides.",
-"geographic_range": "Endemic to the Philippines—Babuyan Islands, Luzon, Mindoro, Polillo, Negros, Cebu, Panay and others.",
-"behavior": "Secretive, ground-dwelling, often found under logs, debris, or in ant nests or leaf litter.",
-"habitat": "Forest floor, under logs, debris piles, forested lowlands and foothills.",
-"diet": "Feeds on smaller snakes (especially Pseudorabdion, Calamaria), lizards, and reptile eggs.",
-"reproduction": "Oviparous, breeds during the rainy season (Dec–Mar); lays 5–6 eggs under logs/ant hills.",
-"venom_toxicity": "None—non-venomous and harmless to humans.",
-"lifespan": "Approximately 10 years.",
-"conservation_status": "Least Concern",
-"references": [
-"https://en.wikipedia.org/wiki/Cyclocorus_lineatus",
-"http://reptile-database.reptarium.cz/Cyclocorus/lineatus",
-"https://www.ecologyasia.com/pdf/2021/seavr2021-005(p008-009).pdf"
-]
-},
-{
-"common_names": [
-"Reticulated python",
-"Retic"
-],
-"scientific_classification": {
-"venom": "Non-venomous",
-"scientific_name": "Malayopython reticulatus",
-"family": "Pythonidae"
-},
-"description": "The world’s longest snake—recorded over 10 meters (32.8 ft). Most adults are 3–6 m (10–19 ft). Pattern: complex of black, yellow, white and gold on grey/tan, ‘reticulated’ net-like design.",
-"geographic_range": "Southeast Asia (Bangladesh, Myanmar, Thailand, Malaysia, Indonesia, the Philippines).",
-"behavior": "Excellent swimmer, can colonize remote islands; nocturnal, often active at night.",
-"habitat": "Tropical forest, woodland edge, grassland, near rivers and lakes; also found in disturbed areas.",
-"diet": "Mammals (rats, monkeys, deer, pigs), birds, sometimes large prey (occasionally recorded to have preyed on humans and crocodiles).",
-"reproduction": "Oviparous; females lay 15–80 eggs (typical 25–50); female broods and incubates.",
-"venom_toxicity": "None—non-venomous constrictor; subdues prey by constriction.",
-"lifespan": "Approximately 20–25 years in the wild; up to 30+ years in captivity.",
-"conservation_status": "Least Concern (IUCN); hunted for skin, meat, and pet trade in some regions.",
-"references": [
-"https://en.wikipedia.org/wiki/Reticulated_python",
-"https://www.britannica.com/animal/reticulated-python",
-"https://reptifiles.com/reticulated-python-care-sheet/",
-"https://ufwildlife.ifas.ufl.edu/snakes/reticulatedpython.shtml"
-]
-},
-{
-"common_names": [
-"Smooth-scaled mountain rat snake",
-"Philippine mountain rat snake",
-"Philippine rat snake"
-],
-"scientific_classification": {
-"venom": "Non-venomous",
-"scientific_name": "Ptyas luzonensis",
-"family": "Colubridae"
-},
-"description": "Long, slender body (up to ~2 m); olive-brown with smooth, glossy dorsal midline scales (not keeled like some other rat snakes); 14–15 dorsal scale rows anteriorly.",
-"geographic_range": "Endemic to the Philippines (Luzon, Polillo, Catanduanes, Leyte, Panay, Negros).",
-"behavior": "Diurnal, active on the forest floor by day; climbs at night; alert and fast-moving.",
-"habitat": "Lowland and montane tropical forests, often near streams or damp vegetation; wide habitat tolerance.",
-"diet": "Primarily rats and other rodents, small vertebrates.",
-"reproduction": "Oviparous; lays eggs in moist safe hiding places.",
-"venom_toxicity": "None—non-venomous and harmless to humans.",
-"lifespan": "Approximately 15 years.",
-"conservation_status": "Least Concern (IUCN); listed among ‘Other Threatened Species’ in the Philippines due to persecution.",
-"references": [
-"https://en.wikipedia.org/wiki/Ptyas_luzonensis",
-"http://reptile-database.reptarium.cz/Ptyas/luzonensis",
-"https://inaturalist.ala.org.au/taxa/28867-Ptyas-luzonensis"
-]
-}
-]
+  "snakes": [
+    {
+      "common_name": "Barred coral snake",
+      "scientific_classification": "Venomous elapid (Hemibungarus calligaster)",
+      "description": "Slender elapid with black body and red/white bands, distinctive eye stripe",
+      "geographic_range": "Philippines (endemic)",
+      "behavior": "Secretive, burrowing, avoids confrontation, bites only when provoked",
+      "habitat": "Lowland moist forests, gardens, low hills, burrowing in leaf litter",
+      "diet": "Small burrowing snakes (worm snakes, blind snakes)",
+      "reproduction": "Oviparous",
+      "venom_toxicity": "MODERATE RISK - Neurotoxic (affects nervous system, respiratory difficulties). Rare human contact.",
+      "lifespan": "10-15 years",
+      "conservation_status": "Least Concern",
+      "image_links": [
+        "https://animalsoftanay.home.blog/wp-content/uploads/2019/11/hemibungarus.jpg?w=500",
+        "https://animalsoftanay.home.blog/wp-content/uploads/2019/11/hemibungarus.calligaster.mcclungi.rafe_.m.brown-copy.jpg?w=1024",
+        "https://i.prcdn.co/img?regionKey=r0VA19iJm76497cmd%2Fk0%2Fg%3D%3D"
+      ],
+      "references": [
+        "https://en.wikipedia.org/wiki/Hemibungarus",
+        "https://www.inaturalist.org/guide_taxa/1180844",
+        "https://cebudailynews.inquirer.net/563391/barred-coral-snake-seen-in-cebu-beauty-and-death-rolled-into-one"
+      ]
+    },
+    {
+      "common_name": "Boie's keelback, Northern water snake",
+      "scientific_classification": "Mildly venomous colubrid (Rhabdophis spilogaster)",
+      "description": "Slender, semi-aquatic snake with varied coloration (green, red, orange, white, black markings)",
+      "geographic_range": "Philippines (Catanduanes, Polillo, Calayan, Luzon)",
+      "behavior": "Secretive, semi-aquatic, defensive when approached",
+      "habitat": "Near water sources, streams, wetland areas, farmland",
+      "diet": "Fish, frogs, invertebrates",
+      "reproduction": "Oviparous",
+      "venom_toxicity": "MILD RISK - Hemotoxic via nuchal glands (limited human risk)",
+      "lifespan": "~10 years",
+      "conservation_status": "Data Deficient",
+      "image_links": [
+        "https://www.inaturalist.org/taxa/28833-Rhabdophis-spilogaster",
+        "https://inaturalist.nz/taxa/1403058-Tropidonophis-spilogaster/browse_photos",
+        "https://observation.org/species/102803/"
+      ],
+      "references": [
+        "https://www.inaturalist.org/taxa/28833-Rhabdophis-spilogaster",
+        "https://observation.org/species/102803/",
+        "http://reptile-database.reptarium.cz/Tropidonophis/spilogaster"
+      ]
+    },
+    {
+      "common_name": "Dog-toothed cat snake, Large blunt-headed tree snake",
+      "scientific_classification": "Mildly venomous colubrid (Boiga cynodon)",
+      "description": "Large snake over 2m, orange-brown with white-edged dark bars, enlarged front teeth, vertical pupil 'cat eyes'",
+      "geographic_range": "Southeast Asia and Philippines (Thailand, Malaysia, Singapore, Philippines, Indonesia)",
+      "behavior": "Arboreal, nocturnal, defensive, ambush predator",
+      "habitat": "Lowland and secondary forests, forest edge, adapted to disturbed habitats",
+      "diet": "Birds, eggs, lizards, bats; pursues prey using jaws and tail",
+      "reproduction": "Oviparous (6-12 eggs per clutch)",
+      "venom_toxicity": "MILD RISK - Neurotoxic (rear-fanged); potent but effects reversible with neostigmine",
+      "lifespan": "~10-15 years",
+      "conservation_status": "Least Concern",
+      "image_links": [
+        "https://www.inaturalist.org/taxa/27700-Boiga-cynodon",
+        "https://www.ecologyasia.com/verts/snakes/dog-toothed_cat-snake.htm",
+        "https://animalia.bio/boiga-cynodon"
+      ],
+      "references": [
+        "https://en.wikipedia.org/wiki/Boiga_cynodon",
+        "https://www.thainationalparks.com/species/boiga-cynodon",
+        "https://www.ecologyasia.com/verts/snakes/dog-toothed_cat-snake.htm",
+        "https://kids.kiddle.co/Dog-toothed_cat_snake"
+      ]
+    },
+    {
+      "common_name": "Gervais' worm snake, Philippine dwarf snake",
+      "scientific_classification": "Non-venomous colubrid (Calamaria gervaisii)",
+      "description": "Small fossorial snake, max 25.5 cm total length; brown-black with pale underbelly",
+      "geographic_range": "Philippines (endemic) - Basilan, Catanduanes, Cebu, Mindanao, Mindoro, Negros, Panay, Luzon",
+      "behavior": "Fossorial (burrowing), rarely seen, cryptic",
+      "habitat": "Forest litter, plantations, under stones, between tree buttresses; near sea level to 1000m elevation",
+      "diet": "Earthworms, small invertebrates",
+      "reproduction": "Oviparous",
+      "venom_toxicity": "NONE - Non-venomous",
+      "lifespan": "~5-10 years",
+      "conservation_status": "Least Concern",
+      "image_links": [
+        "https://www.inaturalist.org/taxa/96412-Calamaria-gervaisii",
+        "https://www.inaturalist.org/guide_taxa/1180852",
+        "https://animalia.bio/calamaria-gervaisii"
+      ],
+      "references": [
+        "https://en.wikipedia.org/wiki/Calamaria_gervaisii",
+        "https://animalia.bio/calamaria-gervaisii",
+        "https://www.inaturalist.org/taxa/96412-Calamaria-gervaisii",
+        "https://www.inaturalist.org/guide_taxa/1180852"
+      ]
+    },
+    {
+      "common_name": "Günther's Philippine shrub snake, Banded Philippine burrowing snake",
+      "scientific_classification": "Non-venomous (Oxyrhabdium leporinum)",
+      "description": "Small burrowing snake endemic to Philippines",
+      "geographic_range": "Philippines (endemic) - Luzon, Mindoro, Cebu, Negros, Panay",
+      "behavior": "Secretive, non-aggressive, burrowing",
+      "habitat": "Forest habitat, burrows",
+      "diet": "Small prey, burrowing animals",
+      "reproduction": "Oviparous",
+      "venom_toxicity": "NONE - Non-venomous",
+      "lifespan": "~10 years",
+      "conservation_status": "Least Concern",
+      "image_links": [
+        "https://www.inaturalist.org/taxa/29174-Oxyrhabdium-leporinum",
+        "https://www.fws.gov/species/gunthers-philippine-shrub-snake-oxyrhabdium-leporinum",
+        "https://en.wikipedia.org/wiki/Oxyrhabdium_leporinum"
+      ],
+      "references": [
+        "https://en.wikipedia.org/wiki/Oxyrhabdium_leporinum",
+        "https://www.fws.gov/species/gunthers-philippine-shrub-snake-oxyrhabdium-leporinum",
+        "https://www.inaturalist.org/taxa/29174-Oxyrhabdium-leporinum"
+      ]
+    },
+    {
+      "common_name": "King cobra",
+      "scientific_classification": "Highly venomous elapid (Ophiophagus hannah)",
+      "description": "World's longest venomous snake; average 3.18-4m, record 5.85m; diverse coloration from black with stripes to brown-grey",
+      "geographic_range": "Indian Subcontinent through Southeast Asia to southern China (widespread)",
+      "behavior": "Solitary, daytime hunter, can expand distinctive hood, produces deep resonant hiss, protects eggs",
+      "habitat": "Forests, fields, villages, water-adjacent areas",
+      "diet": "Preys almost exclusively on other snakes; dominant predators are humans",
+      "reproduction": "Oviparous; only ophidian building above-ground egg nest, female protects throughout incubation",
+      "venom_toxicity": "EXTREME RISK - Neurotoxic (primary neurotoxins target respiratory centers). Single bite delivers enough venom for 20 humans/elephant. Causes respiratory failure, cardiac arrest.",
+      "lifespan": "Up to 20 years in wild",
+      "conservation_status": "Vulnerable",
+      "image_links": [
+        "https://www.nationalgeographic.com/animals/reptiles/facts/king-cobra",
+        "https://nationalzoo.si.edu/animals/king-cobra",
+        "https://www.joelsartore.com/ani102-00444/"
+      ],
+      "references": [
+        "https://en.wikipedia.org/wiki/King_cobra",
+        "https://www.britannica.com/animal/king-cobra",
+        "https://www.nationalgeographic.com/animals/reptiles/facts/king-cobra",
+        "https://nationalzoo.si.edu/animals/king-cobra"
+      ]
+    },
+    {
+      "common_name": "Luzon dwarf snake, Philippine dwarf snake",
+      "scientific_classification": "Non-venomous (Calamaria bitorques)",
+      "description": "Small fossorial snake; characterized by 2-6 dark crossbands behind head",
+      "geographic_range": "Philippines (endemic) - Luzon and Panay",
+      "behavior": "Fossorial, cryptic, rarely encountered",
+      "habitat": "Forest floor, burrowing",
+      "diet": "Small invertebrates, earthworms",
+      "reproduction": "Oviparous",
+      "venom_toxicity": "NONE - Non-venomous",
+      "lifespan": "~5-10 years",
+      "conservation_status": "Least Concern",
+      "image_links": [
+        "https://www.fws.gov/species/luzon-dwarf-snake-calamaria-bitorques",
+        "https://en.wikipedia.org/wiki/Calamaria_bitorques",
+        "http://reptile-database.reptarium.cz/Calamaria/bitorques"
+      ],
+      "references": [
+        "https://en.wikipedia.org/wiki/Calamaria_bitorques",
+        "https://www.fws.gov/species/luzon-dwarf-snake-calamaria-bitorques",
+        "http://reptile-database.reptarium.cz/Calamaria/bitorques"
+      ]
+    },
+    {
+      "common_name": "Mangrove snake, Gold-ringed cat snake",
+      "scientific_classification": "Mildly venomous colubrid (Boiga dendrophila)",
+      "description": "One of largest cat snakes, averaging 8-9 feet (2.4-2.7m); slender black with narrow yellow bands around face and body",
+      "geographic_range": "Southeast Asia (Thailand, Malaysia, Singapore, Philippines, Indonesia)",
+      "behavior": "Nocturnal, arboreal, spends days coiled in mangrove branches near rivers/coastal waters",
+      "habitat": "Riverine mangrove forests, coastal mangrove swamps, overhanging waters",
+      "diet": "Birds (primary prey - venom effective on avian muscle), rodents, lizards, bird eggs",
+      "reproduction": "Oviparous",
+      "venom_toxicity": "MILD RISK - Mildly venomous (denmotoxin); can cause painful swelling/discoloration but not lethal to humans",
+      "lifespan": "~12-15 years",
+      "conservation_status": "Least Concern",
+      "image_links": [
+        "https://nationalzoo.si.edu/animals/mangrove-snake",
+        "https://en.wikipedia.org/wiki/Boiga_dendrophila",
+        "https://www.britannica.com/animal/mangrove-snake"
+      ],
+      "references": [
+        "https://en.wikipedia.org/wiki/Boiga_dendrophila",
+        "https://nationalzoo.si.edu/animals/mangrove-snake",
+        "https://www.britannica.com/animal/mangrove-snake"
+      ]
+    },
+    {
+      "common_name": "Müller's wolf snake",
+      "scientific_classification": "Non-venomous colubrid (Lycodon muelleri)",
+      "description": "Non-venomous colubrid with divided nasals, transverse light bands on body and tail",
+      "geographic_range": "Philippines (Batan, Luzon, Mindoro, Polillo)",
+      "behavior": "Secretive, terrestrial",
+      "habitat": "Forest floor, leaf litter",
+      "diet": "Small vertebrates, insects",
+      "reproduction": "Oviparous",
+      "venom_toxicity": "NONE - Non-venomous",
+      "lifespan": "~10 years",
+      "conservation_status": "Least Concern",
+      "image_links": [
+        "https://www.inaturalist.org/taxa/29561-Lycodon-muelleri",
+        "http://reptile-database.reptarium.cz/Lycodon/muelleri",
+        "https://www.ecologyasia.com/pdf/2018/seavr2018-026(p060-061).pdf"
+      ],
+      "references": [
+        "http://reptile-database.reptarium.cz/Lycodon/muelleri",
+        "https://www.inaturalist.org/taxa/29561-Lycodon-muelleri",
+        "https://www.ecologyasia.com/pdf/2018/seavr2018-026(p060-061).pdf"
+      ]
+    },
+    {
+      "common_name": "North Philippine temple pit viper, Bornean keeled green pit viper, Banded keel-throated pit viper",
+      "scientific_classification": "Venomous pitviper (Tropidolaemus subannulatus)",
+      "description": "Bright green with thin crossbands in blue, red, or white; females larger (96cm) than males (46cm); juveniles/males red-dotted, females blue or red",
+      "geographic_range": "Southeast Asia (Brunei, Indonesia, Malaysia, Philippines including Cebu, Luzon, Panay, Leyte, Samar, Palawan)",
+      "behavior": "Arboreal with prehensile tail, vegetation dweller up to 20m height",
+      "habitat": "Lowland rainforests, low vegetation",
+      "diet": "Birds, small mammals, frogs",
+      "reproduction": "Ovoviviparous (live young)",
+      "venom_toxicity": "MODERATE RISK - Neurotoxic and hemotoxic (predominantly neurotoxic with hemotoxic component). Localized effects, rarely systemic, not known fatal.",
+      "lifespan": "~12-15 years",
+      "conservation_status": "Data Deficient",
+      "image_links": [
+        "https://www.inaturalist.org/taxa/114568-Tropidolaemus-subannulatus",
+        "https://en.wikipedia.org/wiki/Tropidolaemus_subannulatus",
+        "https://www.ukdr.uplb.edu.ph/journal-articles/241/"
+      ],
+      "references": [
+        "https://en.wikipedia.org/wiki/Tropidolaemus_subannulatus",
+        "https://www.inaturalist.org/taxa/114568-Tropidolaemus-subannulatus",
+        "https://www.ukdr.uplb.edu.ph/journal-articles/241/"
+      ]
+    },
+    {
+      "common_name": "Northern short-headed snake",
+      "scientific_classification": "Non-venomous colubrid (Oligodon ancorus)",
+      "description": "Small colubrid endemic to Philippines",
+      "geographic_range": "Philippines (endemic) - Mindoro and Luzon; possibly Sumatra (contested)",
+      "behavior": "Terrestrial, secretive",
+      "habitat": "Coastal forests, mid-montane tropical forests, secondary growth; sea level to 600m elevation",
+      "diet": "Small prey, eggs",
+      "reproduction": "Oviparous",
+      "venom_toxicity": "NONE - Non-venomous",
+      "lifespan": "~10 years",
+      "conservation_status": "Near Threatened",
+      "image_links": [
+        "https://inaturalist.nz/taxa/73877-Oligodon-ancorus",
+        "https://en.wikipedia.org/wiki/Oligodon_ancorus",
+        "https://kids.kiddle.co/Northern_short-headed_snake"
+      ],
+      "references": [
+        "https://en.wikipedia.org/wiki/Oligodon_ancorus",
+        "https://kids.kiddle.co/Northern_short-headed_snake",
+        "https://inaturalist.nz/taxa/73877-Oligodon-ancorus"
+      ]
+    },
+    {
+      "common_name": "Paradise tree snake, Paradise flying snake, Garden flying snake",
+      "scientific_classification": "Mildly venomous colubrid (Chrysopelea paradisi)",
+      "description": "Slender body with dark-edged yellow scales creating flower-petal patterns; red/orange/yellow coloring on dorsal surface; green specimens without bright markings also exist",
+      "geographic_range": "Southeast Asia and beyond (Thailand, Cambodia, Indonesia, Brunei, India-Andaman, Malaysia, Myanmar, Philippines, Singapore)",
+      "behavior": "Diurnal, arboreal, excellent climber favoring coconut palms; remarkable gliding ability (10m+ distances) via rib flaring and serpentine motion",
+      "habitat": "Moist forests, plantations, villages, rural gardens, coconut groves",
+      "diet": "Tree-dwelling lizards, bats",
+      "reproduction": "Oviparous (5-11 eggs)",
+      "venom_toxicity": "MILD RISK - Mildly venomous, rear-fanged; can also constrict prey",
+      "lifespan": "~12-15 years",
+      "conservation_status": "Least Concern",
+      "image_links": [
+        "https://www.ecologyasia.com/verts/snakes/paradise_tree-snake.htm",
+        "https://animalia.bio/paradise-tree-snake",
+        "https://www.thainationalparks.com/species/chrysopelea-paradisi"
+      ],
+      "references": [
+        "https://en.wikipedia.org/wiki/Chrysopelea_paradisi",
+        "https://www.thainationalparks.com/species/chrysopelea-paradisi",
+        "https://animalia.bio/paradise-tree-snake",
+        "https://www.ecologyasia.com/verts/snakes/paradise_tree-snake.htm"
+      ]
+    },
+    {
+      "common_name": "Philippine blunt-headed cat snake, Leyte cat snake, Philippine blunt-headed tree snake",
+      "scientific_classification": "Mildly venomous colubrid (Boiga angulata)",
+      "description": "Short blunt brown head distinct from neck, very large eyes with vertical pupils, slender laterally compressed body, light brown with dark transverse blotches",
+      "geographic_range": "Philippines (endemic) - Bohol, Catanduanes, Leyte, Luzon, Mindanao, Negros, Polillo, Samar, Panay, Romblon, Tablas",
+      "behavior": "Fully arboreal, ambush predator",
+      "habitat": "Lowland and montane tropical moist forests, disturbed habitats",
+      "diet": "Birds, eggs, flying lizards, geckoes",
+      "reproduction": "Oviparous",
+      "venom_toxicity": "MILD RISK - Mildly venomous (rear-fanged)",
+      "lifespan": "~10-15 years",
+      "conservation_status": "Least Concern",
+      "image_links": [
+        "https://www.inaturalist.org/taxa/27711-Boiga-angulata",
+        "https://animalia.bio/boiga-angulata",
+        "http://www.wildalert.ph/s/267"
+      ],
+      "references": [
+        "https://en.wikipedia.org/wiki/Boiga_angulata",
+        "https://www.inaturalist.org/taxa/27711-Boiga-angulata",
+        "http://www.wildalert.ph/s/267",
+        "https://animalia.bio/boiga-angulata"
+      ]
+    },
+    {
+      "common_name": "Philippine bronzeback treesnake, Philippines bronzeback, Striped bronzeback",
+      "scientific_classification": "Non-venomous colubrid (Dendrelaphis philippinensis)",
+      "description": "Arboreal colubrid with distinctive coloration",
+      "geographic_range": "Philippines (endemic and Micronesia-Saipan)",
+      "behavior": "Fully arboreal, fast-moving",
+      "habitat": "Trees, arboreal habitats",
+      "diet": "Lizards, small prey",
+      "reproduction": "Oviparous",
+      "venom_toxicity": "NONE - Non-venomous",
+      "lifespan": "~12 years",
+      "conservation_status": "Least Concern",
+      "image_links": [
+        "https://www.inaturalist.org/taxa/146086-Dendrelaphis-philippinensis",
+        "https://en.wikipedia.org/wiki/Dendrelaphis_philippinensis",
+        "http://reptile-database.reptarium.cz/Dendrelaphis/philippinensis"
+      ],
+      "references": [
+        "https://en.wikipedia.org/wiki/Dendrelaphis_philippinensis",
+        "http://reptile-database.reptarium.cz/Dendrelaphis/philippinensis",
+        "https://www.inaturalist.org/taxa/146086-Dendrelaphis-philippinensis"
+      ]
+    },
+    {
+      "common_name": "Philippine cat snake, Tawny cat-eyed snake",
+      "scientific_classification": "Mildly venomous colubrid (Boiga philippina)",
+      "description": "Very slender up to 213cm (7ft); big head with large cat-like elliptical pupils, white chin extending to half-body, tan/light brown/coffee/pale orange body",
+      "geographic_range": "Philippines (endemic) - Luzon, Camiguin Norte, Babuyan Claro, Dalupiri; 50-800m elevation",
+      "behavior": "Highly nocturnal, nervous when alarmed, strikes repeatedly when defensive, raises head and expands neck scales",
+      "habitat": "Pristine and disturbed old-growth tropical forests, secondary forest, forest edge",
+      "diet": "Voracious hunter - primarily birds and fledglings, near chicken coops, may enter homes, frogs, lizards, rodents",
+      "reproduction": "Mating November-January; females lay 6-14 eggs in tree trunk holes; males slender with bright coloration; females stouter/duller",
+      "venom_toxicity": "MILD RISK - Mildly venomous (slightly stronger than most Boiga); rounded mouth unlikely to cause envenomation",
+      "lifespan": "Up to 15 years in captivity",
+      "conservation_status": "Least Concern",
+      "image_links": [
+        "https://www.inaturalist.org/taxa/27642-Boiga-philippina",
+        "https://animalia.bio/boiga-philippina",
+        "https://en.wikipedia.org/wiki/Boiga_philippina"
+      ],
+      "references": [
+        "https://en.wikipedia.org/wiki/Boiga_philippina",
+        "https://www.inaturalist.org/taxa/27642-Boiga-philippina",
+        "https://animalia.bio/boiga-philippina"
+      ]
+    },
+    {
+      "common_name": "Philippine cobra, Northern Philippine cobra",
+      "scientific_classification": "Highly venomous spitting cobra (Naja philippinensis)",
+      "description": "Stocky, highly venomous spitting cobra; called 'ulupong' in Tagalog",
+      "geographic_range": "Northern Philippines (Luzon, Mindoro, Catanduanes, Masbate)",
+      "behavior": "Solitary, mainly terrestrial, nocturnal, ambush predator; extremely fast and agile; rise upwards and produce hood when threatened; spit venom to 3m",
+      "habitat": "Lowland habitats, burrows, rocks, rice fields",
+      "diet": "Small mammals (rats/mice primary), frogs, other snakes, eggs, birds",
+      "reproduction": "Breed year-round; females lay 10-20 eggs; hatchlings independent when hatched",
+      "venom_toxicity": "EXTREME RISK - Neurotoxic postsynaptic (one of most toxic Naja venoms). Pure neurotoxin, no necrotizing components. Murine LD50 0.18 mg/kg. Minimal local signs; complete respiratory failure in <30 minutes possible.",
+      "lifespan": "~15-20 years",
+      "conservation_status": "Threatened",
+      "image_links": [
+        "https://www.inaturalist.org/taxa/73875-Naja-philippinensis",
+        "https://animalia.bio/philippine-cobra",
+        "https://a-z-animals.com/animals/philippine-cobra/"
+      ],
+      "references": [
+        "https://en.wikipedia.org/wiki/Philippine_cobra",
+        "https://a-z-animals.com/animals/philippine-cobra/",
+        "https://animalia.bio/philippine-cobra",
+        "https://www.sciencedirect.com/science/article/abs/pii/S1874391919301903"
+      ]
+    },
+    {
+      "common_name": "Philippine pit viper",
+      "scientific_classification": "Highly venomous pitviper (Trimeresurus flavomaculatus)",
+      "description": "Highly venomous pitviper with specific scalation patterns",
+      "geographic_range": "Philippines (endemic) - Agutayan, Batan, Camiguin, Catanduanes, Dinagat, Jolo, Leyte, Luzon, Mindanao, Mindoro, Negros, Panay, Polillo",
+      "behavior": "Arboreal, often perching on branches; proficient ambush predator; can descend to ground hunting frogs; nocturnal; typically not aggressive but defends when cornered",
+      "habitat": "Lowland moist forests, forest edges, plantations",
+      "diet": "Small mammals, lizards, frogs, birds",
+      "reproduction": "Ovoviviparous (10-20 live young per litter)",
+      "venom_toxicity": "EXTREME RISK - One of world's most venomous snakes with no specific antivenom yet available",
+      "lifespan": "~12-15 years",
+      "conservation_status": "Least Concern",
+      "image_links": [
+        "https://www.inaturalist.org/taxa/30944-Trimeresurus-flavomaculatus",
+        "https://animalia.bio/philippine-pit-viper",
+        "https://www.joelsartore.com/ani097-00579/"
+      ],
+      "references": [
+        "https://en.wikipedia.org/wiki/Trimeresurus_flavomaculatus",
+        "https://animalia.bio/philippine-pit-viper",
+        "https://www.inaturalist.org/taxa/30944-Trimeresurus-flavomaculatus",
+        "https://www.inaturalist.org/guide_taxa/1180825"
+      ]
+    },
+    {
+      "common_name": "Philippine stripe-lipped snake, Philippine cylindrical snake",
+      "scientific_classification": "Non-venomous (Hologerrhum philippinum)",
+      "description": "Small colubrid endemic to Philippines",
+      "geographic_range": "Philippines (endemic) - Luzon and Polillo",
+      "behavior": "Secretive, rarely encountered",
+      "habitat": "Forest habitats",
+      "diet": "Small prey",
+      "reproduction": "Oviparous",
+      "venom_toxicity": "NONE - Non-venomous",
+      "lifespan": "~10 years",
+      "conservation_status": "Least Concern",
+      "image_links": [
+        "https://www.fws.gov/species/philippine-stripe-lipped-snake-hologerrhum-philippinum",
+        "http://reptile-database.reptarium.cz/Hologerrhum/philippinum",
+        "https://en.wikipedia.org/wiki/Hologerrhum_dermali"
+      ],
+      "references": [
+        "https://en.wikipedia.org/wiki/Hologerrhum_dermali",
+        "https://www.fws.gov/species/philippine-stripe-lipped-snake-hologerrhum-philippinum",
+        "http://reptile-database.reptarium.cz/Hologerrhum/philippinum"
+      ]
+    },
+    {
+      "common_name": "Philippine whipsnake, Keel-bellied whipsnake",
+      "scientific_classification": "Mildly venomous colubrid (Dryophiops philippina)",
+      "description": "3-6 feet long; dark brown/black with light green/pale blue flecks, bright red tongue, cream lateral stripes bisected by dark lines",
+      "geographic_range": "Philippines (endemic) - Luzon (Bataan), Mindoro, Sibuyan, Panay, eastern Mindanao (Diuata Range)",
+      "behavior": "Cathemeral (day/night active); docile but nervous; springs up to flee or remains motionless; expands neck showing coloration; moves in sidewinding manner",
+      "habitat": "Primary and secondary lowland tropical forests, forest floor among leaf litter",
+      "diet": "Specialized hunter - primarily geckos and lizards; may also eat frogs, fish, slugs",
+      "reproduction": "Parthenogenic (rare in snakes - majority females). Mating November-January; 2-6 eggs per clutch; sperm storage reported",
+      "venom_toxicity": "MILD RISK - Mildly venomous (rear-fanged); small mouth unlikely to cause problems; no fatalities reported",
+      "lifespan": "~8-12 years",
+      "conservation_status": "Vulnerable",
+      "image_links": [
+        "https://www.inaturalist.org/taxa/26795-Dryophiops-philippina",
+        "https://animalia.bio/dryophiops-philippina",
+        "https://www.jungledragon.com/image/50750/philippine_whipsnake.html"
+      ],
+      "references": [
+        "https://en.wikipedia.org/wiki/Dryophiops_philippina",
+        "https://animalia.bio/dryophiops-philippina",
+        "https://www.inaturalist.org/taxa/26795-Dryophiops-philippina",
+        "https://www.jungledragon.com/image/50750/philippine_whipsnake.html"
+      ]
+    },
+    {
+      "common_name": "Red-tailed green rat snake, Arboreal ratsnake, Red-tailed racer",
+      "scientific_classification": "Non-venomous colubrid (Gonyosoma oxycephalum)",
+      "description": "Bright/light green or gray morph (Panay, Philippines); red/brown tail; dark horizontal eye line; black tongue with brown/blue sides; head yellow-green/green/yellow",
+      "geographic_range": "Southeast Asia (Indonesia, Malaysia, Singapore, India-Andamans, Myanmar, Thailand, Cambodia, Laos, Vietnam, Philippines)",
+      "behavior": "Arboreal, spends life in trees/cavities, seldom descends; inflates neck when stressed; unpredictable temperament, may strike or bite",
+      "habitat": "Trees, tree cavities, arboreal life",
+      "diet": "Birds, lizards, bats, frogs, arboreal rodents, bird eggs",
+      "reproduction": "Oviparous",
+      "venom_toxicity": "NONE - Non-venomous",
+      "lifespan": "~15-20 years",
+      "conservation_status": "Least Concern",
+      "image_links": [
+        "https://www.inaturalist.org/taxa/29992-Gonyosoma-oxycephalum",
+        "https://www.khaosok.com/national-park/red-tailed-green-ratsnake/",
+        "https://fwzoo.com/animals/red-tailed-green-rat-snake/"
+      ],
+      "references": [
+        "https://en.wikipedia.org/wiki/Gonyosoma_oxycephalum",
+        "https://www.inaturalist.org/taxa/29992-Gonyosoma-oxycephalum",
+        "https://www.khaosok.com/national-park/red-tailed-green-ratsnake/",
+        "https://fwzoo.com/animals/red-tailed-green-rat-snake/"
+      ]
+    },
+    {
+      "common_name": "Reddish rat snake, Philippine rat snake",
+      "scientific_classification": "Non-venomous colubrid (Coelognathus erythrurus)",
+      "description": "Long slender snake up to 1.7m; brownish-red coloration; reddish tail; faint eye-to-jaw stripe; light bands on juveniles fade with age",
+      "geographic_range": "Philippines",
+      "behavior": "Move around daytime but active nighttime; lifts front body S-shape when threatened; defensive display to scare; bites only if too close",
+      "habitat": "Forest edges, near fields/farmland, tree holes, ground holes, caves, abandoned buildings",
+      "diet": "Rats, mice (primary), lizards, small birds; hunts by smell following scent trails; kills by constriction",
+      "reproduction": "Oviparous",
+      "venom_toxicity": "NONE - Non-venomous; kills prey by constriction",
+      "lifespan": "~15 years",
+      "conservation_status": "Least Concern",
+      "image_links": [
+        "https://www.inaturalist.org/taxa/30274-Coelognathus-erythrurus",
+        "https://animalsoftanay.home.blog/2019/03/25/reddish-rat-snake/",
+        "https://en.wikipedia.org/wiki/Philippine_rat_snake"
+      ],
+      "references": [
+        "https://en.wikipedia.org/wiki/Philippine_rat_snake",
+        "https://animalsoftanay.home.blog/2019/03/25/reddish-rat-snake/",
+        "https://www.inaturalist.org/taxa/30274-Coelognathus-erythrurus"
+      ]
+    },
+    {
+      "common_names": [
+        "Reinhardt's lined snake",
+        "Northern triangle-spotted snake"
+      ],
+      "scientific_classification": {
+        "venom": "Non-venomous",
+        "scientific_name": "Cyclocorus lineatus",
+        "family": "Cyclocoridae"
+      },
+      "description": "Small, slender ground-dweller averaging 40 cm (max ~48 cm); gray-brown back with faint dark lines, yellowish or white belly with black blotches, and tiny white dots along the belly sides.",
+      "geographic_range": "Endemic to the Philippines—Babuyan Islands, Luzon, Mindoro, Polillo, Negros, Cebu, Panay and others.",
+      "behavior": "Secretive, ground-dwelling, often found under logs, debris, or in ant nests or leaf litter.",
+      "habitat": "Forest floor, under logs, debris piles, forested lowlands and foothills.",
+      "diet": "Feeds on smaller snakes (especially Pseudorabdion, Calamaria), lizards, and reptile eggs.",
+      "reproduction": "Oviparous, breeds during the rainy season (Dec–Mar); lays 5–6 eggs under logs/ant hills.",
+      "venom_toxicity": "None—non-venomous and harmless to humans.",
+      "lifespan": "Approximately 10 years.",
+      "conservation_status": "Least Concern",
+      "image_links": [
+        "https://en.wikipedia.org/wiki/Cyclocorus_lineatus",
+        "http://reptile-database.reptarium.cz/Cyclocorus/lineatus",
+        "https://www.ecologyasia.com/pdf/2021/seavr2021-005(p008-009).pdf"
+      ],
+      "references": [
+        "https://en.wikipedia.org/wiki/Cyclocorus_lineatus",
+        "http://reptile-database.reptarium.cz/Cyclocorus/lineatus",
+        "https://www.ecologyasia.com/pdf/2021/seavr2021-005(p008-009).pdf"
+      ]
+    },
+    {
+      "common_names": [
+        "Reticulated python",
+        "Retic"
+      ],
+      "scientific_classification": {
+        "venom": "Non-venomous",
+        "scientific_name": "Malayopython reticulatus",
+        "family": "Pythonidae"
+      },
+      "description": "The world's longest snake—recorded over 10 meters (32.8 ft). Most adults are 3–6 m (10–19 ft). Pattern: complex of black, yellow, white and gold on grey/tan, 'reticulated' net-like design.",
+      "geographic_range": "Southeast Asia (Bangladesh, Myanmar, Thailand, Malaysia, Indonesia, the Philippines).",
+      "behavior": "Excellent swimmer, can colonize remote islands; nocturnal, often active at night.",
+      "habitat": "Tropical forest, woodland edge, grassland, near rivers and lakes; also found in disturbed areas.",
+      "diet": "Mammals (rats, monkeys, deer, pigs), birds, sometimes large prey (occasionally recorded to have preyed on humans and crocodiles).",
+      "reproduction": "Oviparous; females lay 15–80 eggs (typical 25–50); female broods and incubates.",
+      "venom_toxicity": "None—non-venomous constrictor; subdues prey by constriction.",
+      "lifespan": "Approximately 20–25 years in the wild; up to 30+ years in captivity.",
+      "conservation_status": "Least Concern (IUCN); hunted for skin, meat, and pet trade in some regions.",
+      "image_links": [
+        "https://www.inaturalist.org/taxa/491869-Malayopython-reticulatus",
+        "https://www.britannica.com/animal/reticulated-python",
+        "https://www.ecologyasia.com/verts/snakes/reticulated_python.htm"
+      ],
+      "references": [
+        "https://en.wikipedia.org/wiki/Reticulated_python",
+        "https://www.britannica.com/animal/reticulated-python",
+        "https://reptifiles.com/reticulated-python-care-sheet/",
+        "https://ufwildlife.ifas.ufl.edu/snakes/reticulatedpython.shtml"
+      ]
+    },
+    {
+      "common_names": [
+        "Smooth-scaled mountain rat snake",
+        "Philippine mountain rat snake",
+        "Philippine rat snake"
+      ],
+      "scientific_classification": {
+        "venom": "Non-venomous",
+        "scientific_name": "Ptyas luzonensis",
+        "family": "Colubridae"
+      },
+      "description": "Long, slender body (up to ~2 m); olive-brown with smooth, glossy dorsal midline scales (not keeled like some other rat snakes); 14–15 dorsal scale rows anteriorly.",
+      "geographic_range": "Endemic to the Philippines (Luzon, Polillo, Catanduanes, Leyte, Panay, Negros).",
+      "behavior": "Diurnal, active on the forest floor by day; climbs at night; alert and fast-moving.",
+      "habitat": "Lowland and montane tropical forests, often near streams or damp vegetation; wide habitat tolerance.",
+      "diet": "Primarily rats and other rodents, small vertebrates.",
+      "reproduction": "Oviparous; lays eggs in moist safe hiding places.",
+      "venom_toxicity": "None—non-venomous and harmless to humans.",
+      "lifespan": "Approximately 15 years.",
+      "conservation_status": "Least Concern (IUCN); listed among 'Other Threatened Species' in the Philippines due to persecution.",
+      "image_links": [
+        "https://www.inaturalist.org/taxa/28867-Ptyas-luzonensis",
+        "https://en.wikipedia.org/wiki/Ptyas_luzonensis",
+        "http://reptile-database.reptarium.cz/Ptyas/luzonensis"
+      ],
+      "references": [
+        "https://en.wikipedia.org/wiki/Ptyas_luzonensis",
+        "http://reptile-database.reptarium.cz/Ptyas/luzonensis",
+        "https://inaturalist.ala.org.au/taxa/28867-Ptyas-luzonensis"
+      ]
+    }
+  ]
 }

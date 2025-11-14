@@ -14,8 +14,8 @@ Hospital _$HospitalFromJson(Map<String, dynamic> json) => Hospital(
   latitude: (json['latitude'] as num).toDouble(),
   longitude: (json['longitude'] as num).toDouble(),
   contact: (json['contact'] as List<dynamic>).map((e) => e as String).toList(),
-  email: json['email'] as String,
-  toxicologist: json['toxicologist'] as String,
+  email: json['email'] as String?,
+  toxicologist: json['toxicologist'] as String?,
   provinces: (json['provinces'] as List<dynamic>)
       .map((e) => e as String)
       .toList(),

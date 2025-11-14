@@ -735,7 +735,7 @@ class _MapPageState extends State<MapPage> {
                   const SizedBox(width: 8),
                   Expanded(
                     child: Text(
-                      hospital.toxicologist,
+                      hospital.toxicologist?? "N/A",
                       style: const TextStyle(fontSize: 14),
                     ),
                   ),

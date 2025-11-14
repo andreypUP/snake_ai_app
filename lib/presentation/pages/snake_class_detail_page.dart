@@ -3,6 +3,8 @@ import 'package:go_router/go_router.dart';
 import 'package:venom_shield_ph/core/di/injection_container.dart';
 import 'package:venom_shield_ph/domain/services/snake_info_service.dart';
 import 'package:venom_shield_ph/presentation/widgets/safety_info_widget.dart';
+import 'package:octo_image/octo_image.dart';
+import 'package:cached_network_image/cached_network_image.dart';
 
 class SnakeClassDetailPage extends StatefulWidget {
   final String snakeId;
@@ -118,6 +120,64 @@ class _SnakeClassDetailPageState extends State<SnakeClassDetailPage> {
                         ],
 
                         const SizedBox(height: 24),
+
+                        // Image gallery
+                        if (_snakeInfo!['image_links'] != null && _snakeInfo!['image_links'] is List) ...[
+                          SizedBox(
+                            height: 200,
+                            child: ListView.builder(
+                              scrollDirection: Axis.horizontal,
+                              itemCount: (_snakeInfo!['image_links'] as List).length,
+                              itemBuilder: (context, index) {
+                                final imageUrl = (_snakeInfo!['image_links'] as List)[index].toString();
+                                return Padding(
+                                  padding: const EdgeInsets.only(right: 12),
+                                  child: ClipRRect(
+                                    borderRadius: BorderRadius.circular(12),
+                                    child: SizedBox(
+                                      width: 200,
+                                      child: OctoImage(
+                                        image: CachedNetworkImageProvider(imageUrl),
+                                        placeholderBuilder: (context) => Container(
+                                          color: Colors.grey[200],
+                                          child: const Center(
+                                            child: CircularProgressIndicator(
+                                              color: Colors.green,
+                                            ),
+                                          ),
+                                        ),
+                                        errorBuilder: (context, error, stackTrace) => Container(
+                                          color: Colors.grey[300],
+                                          child: const Column(
+                                            mainAxisAlignment: MainAxisAlignment.center,
+                                            children: [
+                                              Icon(
+                                                Icons.broken_image,
+                                                size: 48,
+                                                color: Colors.grey,
+                                              ),
+                                              SizedBox(height: 8),
+                                              Text(
+                                                'Image not available',
+                                                style: TextStyle(
+                                                  fontSize: 12,
+                                                  color: Colors.grey,
+                                                ),
+                                              ),
+                                            ],
+                                          ),
+                                        ),
+                                        fit: BoxFit.cover,
+                                      ),
+                                    ),
+                                  ),
+                                );
+                              },
+                            ),
+                          ),
+                          const SizedBox(height: 24),
+                        ],
+
                         const Divider(),
                         const SizedBox(height: 16),
 

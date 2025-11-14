@@ -149,82 +149,119 @@ class _DetectionResultPageState extends State<DetectionResultPage> {
           onPressed: () => Navigator.pop(context),
         ),
       ),
-      body: Column(
+      body: Stack(
         children: [
-          // Image with bounding boxes
-          Expanded(
-            flex: 3,
-            child: Container(
-              color: Colors.black,
-              child: Center(
-                child: Stack(
-                  children: [
-                    Image.file(
-                      widget.imageFile,
-                      fit: BoxFit.contain,
-                    ),
-                    Positioned.fill(
-                      child: CustomPaint(
-                        painter: DetectionPainter(
-                          imageFile: widget.imageFile,
-                          detections: widget.detections,
-                        ),
+          // Image with bounding boxes (background)
+          Container(
+            color: Colors.black,
+            child: Center(
+              child: Stack(
+                children: [
+                  Image.file(
+                    widget.imageFile,
+                    fit: BoxFit.contain,
+                  ),
+                  Positioned.fill(
+                    child: CustomPaint(
+                      painter: DetectionPainter(
+                        imageFile: widget.imageFile,
+                        detections: widget.detections,
                       ),
                     ),
-                  ],
-                ),
+                  ),
+                ],
               ),
             ),
           ),
 
-          // Detection results and snake info
-          Expanded(
-            flex: 2,
-            child: widget.detections.isEmpty
-                ? Center(
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: [
-                        const Icon(
-                          Icons.search_off,
-                          size: 64,
-                          color: Colors.grey,
-                        ),
-                        const SizedBox(height: 16),
-                        const Text(
-                          'No snakes detected',
-                          style: TextStyle(
-                            fontSize: 20,
-                            fontWeight: FontWeight.bold,
-                            color: Colors.grey,
-                          ),
-                        ),
-                        const SizedBox(height: 8),
-                        const Text(
-                          'Try taking another photo',
-                          style: TextStyle(
-                            fontSize: 16,
-                            color: Colors.grey,
-                          ),
-                        ),
-                      ],
-                    ),
-                  )
-                : ListView.builder(
-                    padding: const EdgeInsets.all(16),
-                    itemCount: widget.detections.length + 1, // +1 for safety widget
-                    itemBuilder: (context, index) {
-                      // Show safety widget after all detections
-                      if (index == widget.detections.length) {
-                        return const SafetyInfoWidget();
-                      }
-                      
-                      final detection = widget.detections[index];
-                      // Only show snake info for the first (best) detection
-                      final showSnakeInfo = index == 0 && _snakeInfo != null;
-                      return _buildDetectionCard(detection, index, showSnakeInfo);
-                    },
+          // Draggable detection results sheet
+          DraggableScrollableSheet(
+            initialChildSize: 0.4, // 40% of screen initially
+            minChildSize: 0.2, // Minimum 20% of screen
+            maxChildSize: 0.95, // Maximum 95% of screen (almost fullscreen)
+            snap: true,
+            snapSizes: const [0.4, 0.95], // Snap to 40% or 95%
+            builder: (BuildContext context, ScrollController scrollController) {
+              return Container(
+                decoration: const BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.only(
+                    topLeft: Radius.circular(20),
+                    topRight: Radius.circular(20),
                   ),
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.black26,
+                      blurRadius: 10,
+                      offset: Offset(0, -2),
+                    ),
+                  ],
+                ),
+                child: Column(
+                  children: [
+                    // Drag handle
+                    Container(
+                      margin: const EdgeInsets.only(top: 12, bottom: 8),
+                      width: 40,
+                      height: 4,
+                      decoration: BoxDecoration(
+                        color: Colors.grey[300],
+                        borderRadius: BorderRadius.circular(2),
+                      ),
+                    ),
+                    // Content
+                    Expanded(
+                      child: widget.detections.isEmpty
+                          ? Center(
+                              child: Column(
+                                mainAxisAlignment: MainAxisAlignment.center,
+                                children: [
+                                  const Icon(
+                                    Icons.search_off,
+                                    size: 64,
+                                    color: Colors.grey,
+                                  ),
+                                  const SizedBox(height: 16),
+                                  const Text(
+                                    'No snakes detected',
+                                    style: TextStyle(
+                                      fontSize: 20,
+                                      fontWeight: FontWeight.bold,
+                                      color: Colors.grey,
+                                    ),
+                                  ),
+                                  const SizedBox(height: 8),
+                                  const Text(
+                                    'Try taking another photo',
+                                    style: TextStyle(
+                                      fontSize: 16,
+                                      color: Colors.grey,
+                                    ),
+                                  ),
+                                ],
+                              ),
+                            )
+                          : ListView.builder(
+                              controller: scrollController,
+                              padding: const EdgeInsets.all(16),
+                              itemCount: widget.detections.length + 1, // +1 for safety widget
+                              itemBuilder: (context, index) {
+                                // Show safety widget after all detections
+                                if (index == widget.detections.length) {
+                                  return const SafetyInfoWidget();
+                                }
+
+                                final detection = widget.detections[index];
+                                // Only show snake info for the first (best) detection
+                                final showSnakeInfo = index == 0 && _snakeInfo != null;
+                                return _buildDetectionCard(detection, index, showSnakeInfo);
+                              },
+                            ),
+                    ),
+                  ],
+                ),
+              );
+            },
           ),
         ],
       ),
@@ -490,7 +527,8 @@ class DetectionPainter extends CustomPainter {
 
       // Draw label background
       final textSpan = TextSpan(
-        text: '${detection.label} ${(detection.confidence * 100).toStringAsFixed(0)}%',
+        // text: '${detection.label} ${(detection.confidence * 100).toStringAsFixed(0)}%',
+        text: '',
         style: const TextStyle(
           color: Colors.white,
           fontSize: 14,
