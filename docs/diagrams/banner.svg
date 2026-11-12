@@ -1,0 +1,82 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 320" width="1200" height="320" role="img" aria-label="SnakeAI: snap a snake, know if it's dangerous, find anti-venom fast">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#0d1117"/>
+      <stop offset="1" stop-color="#0f1f17"/>
+    </linearGradient>
+    <pattern id="scales" width="22" height="22" patternUnits="userSpaceOnUse">
+      <path d="M0 11 Q5.5 0 11 11 Q16.5 0 22 11" fill="none" stroke="#7ee2a8" stroke-width="1" opacity="0.07"/>
+    </pattern>
+    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
+      <stop offset="0" stop-color="#3fb950" stop-opacity="0.22"/>
+      <stop offset="1" stop-color="#3fb950" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="scan" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#7ee2a8" stop-opacity="0"/>
+      <stop offset="1" stop-color="#7ee2a8" stop-opacity="0.55"/>
+    </linearGradient>
+    <clipPath id="screen"><rect x="905" y="40" width="190" height="236" rx="10"/></clipPath>
+  </defs>
+  <style>
+    .t{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
+    .scan{animation:scan 2.8s ease-in-out infinite}
+    @keyframes scan{0%{transform:translateY(0)}50%{transform:translateY(176px)}100%{transform:translateY(0)}}
+    .box{animation:box 5.6s ease-in-out infinite;opacity:0}
+    @keyframes box{0%,30%{opacity:0}38%,92%{opacity:1}100%{opacity:0}}
+    .tongue{transform-box:fill-box;transform-origin:0% 50%;animation:flick 1.8s ease-in-out infinite}
+    @keyframes flick{0%,70%,100%{transform:scaleX(0)}78%,90%{transform:scaleX(1)}}
+    .body{stroke-dasharray:14 10;animation:slither 1.6s linear infinite}
+    @keyframes slither{to{stroke-dashoffset:-24}}
+    .blink{animation:blink 1.4s steps(2) infinite}
+    @keyframes blink{50%{opacity:.3}}
+    @media (prefers-reduced-motion:reduce){.scan,.box,.tongue,.body,.blink{animation:none;opacity:1}}
+  </style>
+
+  <rect width="1200" height="320" rx="18" fill="url(#bg)"/>
+  <rect width="1200" height="320" rx="18" fill="url(#scales)"/>
+  <rect x="0.5" y="0.5" width="1199" height="319" rx="18" fill="none" stroke="#30363d"/>
+
+  <!-- title -->
+  <text x="72" y="140" class="t" font-size="92" font-weight="800" letter-spacing="-2"><tspan fill="#7ee2a8">Snake</tspan><tspan fill="#FAE6AA">AI</tspan></text>
+  <text x="76" y="186" class="t" font-size="24" fill="#c9d1d9">Snap a snake. Know if it's dangerous. Find anti-venom fast.</text>
+
+  <!-- chips -->
+  <g class="t" font-size="14" font-weight="600">
+    <rect x="76" y="220" width="86" height="30" rx="15" fill="#161b22" stroke="#30363d"/>
+    <text x="119" y="240" text-anchor="middle" fill="#79c0ff">Flutter</text>
+    <rect x="172" y="220" width="128" height="30" rx="15" fill="#161b22" stroke="#30363d"/>
+    <text x="236" y="240" text-anchor="middle" fill="#7ee2a8">YOLO · TFLite</text>
+    <rect x="310" y="220" width="94" height="30" rx="15" fill="#161b22" stroke="#30363d"/>
+    <text x="357" y="240" text-anchor="middle" fill="#F2A65A">Firebase</text>
+    <rect x="414" y="220" width="90" height="30" rx="15" fill="#161b22" stroke="#30363d"/>
+    <text x="459" y="240" text-anchor="middle" fill="#a5b4fc">Mapbox</text>
+    <rect x="514" y="220" width="150" height="30" rx="15" fill="#161b22" stroke="#8250df"/>
+    <text x="589" y="240" text-anchor="middle" fill="#d2a8ff">8th COIL · 2025</text>
+  </g>
+  <text x="76" y="284" class="t" font-size="14" fill="#9198a1">25 Philippine species · on-device · 14 anti-venom hospitals</text>
+
+  <!-- phone with live detection -->
+  <circle cx="1000" cy="160" r="160" fill="url(#glow)"/>
+  <rect x="893" y="22" width="214" height="280" rx="26" fill="#0d1117" stroke="#7ee2a8" stroke-width="3"/>
+  <rect x="975" y="30" width="50" height="5" rx="2.5" fill="#30363d"/>
+  <g clip-path="url(#screen)">
+    <rect x="905" y="40" width="190" height="236" fill="#132a1c"/>
+    <path d="M905 230 Q960 210 1000 228 T1095 222 V276 H905 Z" fill="#1a3a26"/>
+    <!-- snake -->
+    <path class="body" d="M928 236 C950 200 990 250 1010 214 S1040 160 1020 130 S990 108 1014 92" fill="none" stroke="#c98a4b" stroke-width="16" stroke-linecap="round"/>
+    <path d="M928 236 C950 200 990 250 1010 214 S1040 160 1020 130 S990 108 1014 92" fill="none" stroke="#3d2a14" stroke-width="16" stroke-linecap="round" stroke-dasharray="4 20" opacity=".55"/>
+    <ellipse cx="1020" cy="86" rx="15" ry="11" fill="#c98a4b" transform="rotate(-20 1020 86)"/>
+    <circle cx="1026" cy="81" r="2.4" fill="#0d1117"/>
+    <path class="tongue" d="M1034 84 h14 l5 -4 M1048 84 l5 4" stroke="#f47067" stroke-width="2.2" fill="none" stroke-linecap="round"/>
+    <!-- scan line -->
+    <rect class="scan" x="905" y="58" width="190" height="34" fill="url(#scan)"/>
+  </g>
+  <!-- detection box -->
+  <g class="box">
+    <path d="M918 76 v-12 h12 M1072 64 h12 v12 M1084 236 v12 h-12 M930 248 h-12 v-12" stroke="#7ee2a8" stroke-width="3.5" fill="none" stroke-linecap="round"/>
+    <rect x="918" y="256" width="118" height="20" rx="4" fill="#7ee2a8"/>
+    <text x="977" y="270" class="t" font-size="11" font-weight="800" fill="#0d1117" text-anchor="middle">Philippine cobra 94%</text>
+    <rect x="1040" y="256" width="44" height="20" rx="4" fill="#f47067"/>
+    <text x="1062" y="270" class="t blink" font-size="10" font-weight="800" fill="#0d1117" text-anchor="middle">VENOM</text>
+  </g>
+</svg>
