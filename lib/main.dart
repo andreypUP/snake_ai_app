@@ -28,7 +28,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp.router(
-      title: "Venom Shield PH",
+      title: "SnakeAI",
       debugShowCheckedModeBanner: false,
       routerConfig: _router,
       theme: ThemeData(

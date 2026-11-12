@@ -42,6 +42,10 @@ class YoloDetector {
       // Load labels
       final labelsData = await rootBundle.loadString('lib/domain/models/labels.txt');
       _labels = labelsData.split('\n').where((label) => label.isNotEmpty).toList();
+      print('📋 Loaded ${_labels!.length} labels from labels.txt');
+      print('📋 First few labels: ${_labels!.take(5).join(", ")}');
+      print('📋 Label at index 1: "${_labels![1]}"');
+      print('📋 Label at index 17: "${_labels!.length > 17 ? _labels![17] : "N/A"}"');
     } catch (e) {
       rethrow;
     }
@@ -64,8 +68,8 @@ class YoloDetector {
     final preprocessed = _preprocessImage(image);
 
     // Run inference
-    // Output shape: [1, 16, 8400] where 16 = 4 bbox + 12 classes
-    var output = List.filled(1 * 16 * 8400, 0.0).reshape([1, 16, 8400]);
+    // Output shape: [1, 29, 8400] where 29 = 4 bbox + 25 classes
+    var output = List.filled(1 * 29 * 8400, 0.0).reshape([1, 29, 8400]);
 
     _interpreter!.run(preprocessed, output);
 
@@ -105,10 +109,10 @@ class YoloDetector {
   List<DetectionResult> _postProcess(List output, int imgWidth, int imgHeight) {
     List<DetectionResult> detections = [];
 
-    // YOLOv11 output format: [1, 16, 8400]
-    // 16 = 4 (bbox) + 12 (classes)
+    // YOLOv11 output format: [1, 29, 8400]
+    // 29 = 4 (bbox) + 25 (classes)
     // 8400 = number of anchor boxes
-    final predictions = output[0]; // Shape: [16, 8400]
+    final predictions = output[0]; // Shape: [29, 8400]
 
     // Transpose to iterate through each detection
     for (int i = 0; i < 8400; i++) {
@@ -118,9 +122,9 @@ class YoloDetector {
       final w = predictions[2][i];
       final h = predictions[3][i];
 
-      // Get class scores (indices 4-15 for 12 classes)
+      // Get class scores (indices 4-28 for 25 classes)
       List<double> classScores = [];
-      for (int j = 4; j < 16; j++) {
+      for (int j = 4; j < 29; j++) {
         classScores.add(predictions[j][i]);
       }
 
@@ -142,8 +146,19 @@ class YoloDetector {
       final width = w * imgWidth / inputSize;
       final height = h * imgHeight / inputSize;
 
+      // Get label safely
+      String label;
+      if (_labels != null && maxClassIndex >= 0 && maxClassIndex < _labels!.length) {
+        label = _labels![maxClassIndex];
+        print('✅ Detected class index $maxClassIndex: "$label" (confidence: ${(maxScore * 100).toStringAsFixed(1)}%)');
+      } else {
+        print('⚠️ Warning: Invalid class index $maxClassIndex. Labels length: ${_labels?.length ?? 0}');
+        print('⚠️ Available labels: ${_labels?.take(5).join(", ") ?? "null"}...');
+        label = 'Unknown snake (class $maxClassIndex)';
+      }
+
       detections.add(DetectionResult(
-        label: _labels![maxClassIndex],
+        label: label,
         confidence: maxScore,
         x: x,
         y: y,

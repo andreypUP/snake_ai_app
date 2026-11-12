@@ -99,7 +99,7 @@ class _ShellPageState extends State<ShellPage> {
     });
     ScaffoldMessenger.of(context).showSnackBar(
       const SnackBar(
-        content: Text('Continuing as guest - AI Cam only'),
+        content: Text('Continuing as guest - Limited features'),
         backgroundColor: Colors.orange,
       ),
     );
@@ -161,8 +161,8 @@ class _ShellPageState extends State<ShellPage> {
   }
 
   void _onItemTapped(int index) {
-    // Guest can only access AI Cam (index 0)
-    if (_isGuest && index != 0) {
+    // Guest can only access Classes (index 0) and AI Cam (index 1)
+    if (_isGuest && index > 1) {
       ScaffoldMessenger.of(context).showSnackBar(
         const SnackBar(
           content: Text('Please sign in to access this feature'),
@@ -186,12 +186,18 @@ class _ShellPageState extends State<ShellPage> {
     // Navigate to the corresponding page
     switch (index) {
       case 0:
-        AICamPageRoute().push(context);
+        SnakeClassListPageRoute().push(context);
         break;
       case 1:
-        ReportPageRoute().push(context);
+        AICamPageRoute().push(context);
         break;
       case 2:
+        ClassificationReportListPageRoute().push(context);
+        break;
+      case 3:
+        ReportPageRoute().push(context);
+        break;
+      case 4:
         MapPageRoute().push(context);
         break;
     }
@@ -204,7 +210,7 @@ class _ShellPageState extends State<ShellPage> {
           ? AppBar(
               backgroundColor: Colors.green,
               foregroundColor: Colors.white,
-              title: Text(_isGuest ? 'Guest Mode' : 'Venom Shield PH'),
+              title: Text(_isGuest ? 'Guest Mode' : 'SnakeAI'),
               actions: [
                 if (_currentUser != null && _currentUser!.photoURL != null)
                   GestureDetector(
@@ -292,14 +298,24 @@ class _ShellPageState extends State<ShellPage> {
               type: BottomNavigationBarType.fixed,
               items: const [
                 BottomNavigationBarItem(
+                  icon: Icon(Icons.pets_outlined),
+                  activeIcon: Icon(Icons.pets),
+                  label: 'Classes',
+                ),
+                BottomNavigationBarItem(
                   icon: Icon(Icons.camera_alt_outlined),
                   activeIcon: Icon(Icons.camera_alt),
                   label: 'AI Cam',
                 ),
                 BottomNavigationBarItem(
+                  icon: Icon(Icons.history_outlined),
+                  activeIcon: Icon(Icons.history),
+                  label: 'History',
+                ),
+                BottomNavigationBarItem(
                   icon: Icon(Icons.report_outlined),
                   activeIcon: Icon(Icons.report),
-                  label: 'Report',
+                  label: 'Reports',
                 ),
                 BottomNavigationBarItem(
                   icon: Icon(Icons.map_outlined),
@@ -326,7 +342,7 @@ class _ShellPageState extends State<ShellPage> {
             ),
             const SizedBox(height: 24),
             const Text(
-              'Venom Shield PH',
+              'SnakeAI',
               style: TextStyle(
                 fontSize: 36,
                 fontWeight: FontWeight.bold,
@@ -402,7 +418,7 @@ class _ShellPageState extends State<ShellPage> {
             ),
             const SizedBox(height: 16),
             Text(
-              'Guest mode: Offline AI Cam only',
+              'Guest mode: Classes and AI Cam only',
               style: TextStyle(
                 fontSize: 14,
                 color: Colors.grey.shade500,
@@ -446,7 +462,7 @@ class _ShellPageState extends State<ShellPage> {
           const SizedBox(height: 16),
           Text(
             _isGuest
-                ? 'You can only access AI Cam in guest mode'
+                ? 'You can only access Classes and AI Cam in guest mode'
                 : 'Select an option from the menu below',
             style: TextStyle(
               fontSize: 18,

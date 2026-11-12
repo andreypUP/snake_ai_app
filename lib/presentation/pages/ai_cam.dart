@@ -113,7 +113,7 @@ class _AICamPageState extends State<AICamPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Snake Detection'),
+        title: const Text('Snake Classification'),
         leading: IconButton(
           icon: const Icon(Icons.arrow_back),
           onPressed: () => context.pop(),
