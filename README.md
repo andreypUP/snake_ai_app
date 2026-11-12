@@ -2,198 +2,308 @@
 
 # SnakeAI: An AI-Based Snake Classification and Anti-Venom Locator System for Public Safety and Conservation
 
-**Snap a snake. Know if it's dangerous. Find anti-venom fast.**
+<img src="docs/diagrams/banner.svg" alt="SnakeAI: snap a snake, know if it's dangerous, find anti-venom fast" width="100%" />
 
-AI-powered snake identification and anti-venom locator for the Philippines
+<br/>
 
-![Flutter](https://img.shields.io/badge/Flutter-Dart_3.9-02569B?style=flat-square&logo=flutter&logoColor=white)
-![Model](https://img.shields.io/badge/Model-YOLO_·_TFLite-00A86B?style=flat-square&logo=tensorflow&logoColor=white)
-![Firebase](https://img.shields.io/badge/Firebase-Auth_·_Firestore-D97706?style=flat-square&logo=firebase&logoColor=white)
-![Mapbox](https://img.shields.io/badge/Maps-Mapbox-4264FB?style=flat-square&logo=mapbox&logoColor=white)
-![COIL](https://img.shields.io/badge/Presented-8th_COIL_2025-8250DF?style=flat-square)
+![Flutter](https://img.shields.io/badge/Flutter-02569B?style=for-the-badge&logo=flutter&logoColor=white)
+![TensorFlow Lite](https://img.shields.io/badge/YOLO-TFLite-FF6F00?style=for-the-badge&logo=tensorflow&logoColor=white)
+![Firebase](https://img.shields.io/badge/Firebase-Auth%20%C2%B7%20Firestore-FFCA28?style=for-the-badge&logo=firebase&logoColor=black)
+![Mapbox](https://img.shields.io/badge/Mapbox-Maps-4264FB?style=for-the-badge&logo=mapbox&logoColor=white)
 
-[Demo video](https://drive.google.com/file/d/1yE4gGs6ZT6XtZQQ2YZ_kCCu6VTWZZeLD/view?usp=sharing) · [How it works](#how-it-works) · [Features](#features) · [Presentation](#presented-at-coil-2025) · [Getting started](#getting-started)
+**An AI-powered snake identification and anti-venom locator for the Philippines.** Point your phone at a snake, learn whether it's dangerous, and get directions to the nearest hospital that can help.
+
+[**Demo video**](https://drive.google.com/file/d/1yE4gGs6ZT6XtZQQ2YZ_kCCu6VTWZZeLD/view?usp=sharing) · [**The app**](#the-app) · [**How it works**](#how-it-works) · [**Architecture**](#system-architecture) · [**Under the hood**](#under-the-hood) · [**COIL 2025**](#presented-at-coil-2025) · [**Run it**](#run-it-yourself)
 
 </div>
 
 > [!IMPORTANT]
-> **Presented internationally** at the **8th Collaborative Online International Learning (COIL) Program**, a joint initiative of **Kyushu Sangyo University (Japan)** and **MSU-Iligan Institute of Technology (Philippines)**, held November 15, 2025.
-> Co-presented by Mark Andrey G. Acebu and Janna Joyce E. Jumao-as.
+> **Presented internationally** at the **8th Collaborative Online International Learning (COIL) Program**, a joint initiative of **Kyushu Sangyo University (Japan)** and **MSU-Iligan Institute of Technology (Philippines)**, held November 15, 2025. Co-presented by Mark Andrey G. Acebu and Janna Joyce E. Jumao-as.
 
----
-
-## The problem
-
-When someone in the Philippines comes face to face with a snake, two questions matter more than anything else: *is it venomous?* and *where is the nearest anti-venom?* Most people can't answer the first one, and the second often takes calls and searching that waste time.
-
-SnakeAI answers both from a phone camera. It identifies the species on-device, explains how dangerous it is, and points you to the nearest hospital or poison-control unit equipped to help. The same data supports **public safety** and **biodiversity conservation**: every confirmed sighting can be shared to a community map, which helps people see that most snakes are harmless and worth protecting.
-
-## How it works
-
-<div align="center">
-
-**SNAP** &nbsp;→&nbsp; **IDENTIFY** &nbsp;→&nbsp; **ASSESS RISK** &nbsp;→&nbsp; **GET HELP**
-
-</div>
+<br/>
 
 <table>
   <tr>
-    <td align="center" width="33%"><img src="docs/images/camera_scan.jpg" width="230" alt="Camera framing a cobra"><br><b>1. Snap</b><br><sub>Frame the snake with the camera, or upload a photo from the gallery.</sub></td>
-    <td align="center" width="33%"><img src="docs/images/snake_details_sample.jpg" width="230" alt="Species details with venom toxicity"><br><b>2. Identify and assess</b><br><sub>An on-device YOLO model names the species and shows its venom risk.</sub></td>
-    <td align="center" width="33%"><img src="docs/images/map_route.jpg" width="230" alt="Route to nearest hospital"><br><b>3. Get help</b><br><sub>Get driving directions to the nearest anti-venom or toxicology unit.</sub></td>
+    <td width="38%" align="center">
+      <img src="docs/images/camera_scan.jpg" alt="SnakeAI camera framing a cobra" width="260" />
+    </td>
+    <td width="62%">
+
+### Two questions, answered in seconds
+
+When someone in the Philippines comes face to face with a snake, two questions matter most: **is it venomous?** and **where is the nearest anti-venom?**
+
+SnakeAI answers both from a phone camera. A YOLO model running **on the device** identifies **25 Philippine species** with no internet needed, shows how dangerous the snake is and what to do, then routes you to the nearest of **14 poison-control units**.
+
+Every sighting can also be shared to a **community map**. It helps neighbors stay alert, and it shows that most snakes are harmless and worth protecting.
+
+  </td>
   </tr>
 </table>
 
-<div align="center">
+## The app
 
-**[Watch the full demo video](https://drive.google.com/file/d/1yE4gGs6ZT6XtZQQ2YZ_kCCu6VTWZZeLD/view?usp=sharing)**
+<table>
+  <tr>
+    <td align="center" width="33%"><a href="docs/images/snake_details_sample.jpg"><img src="docs/images/snake_details_sample.jpg" alt="Species details with venom toxicity" /></a></td>
+    <td align="center" width="33%"><a href="docs/images/snake_classes.jpg"><img src="docs/images/snake_classes.jpg" alt="Species list with risk levels" /></a></td>
+    <td align="center" width="33%"><a href="docs/images/map_hospitals.jpg"><img src="docs/images/map_hospitals.jpg" alt="Hospitals across the Philippines" /></a></td>
+  </tr>
+  <tr>
+    <td align="center"><b>Identify</b><br/><sub>Species, scientific name and venom toxicity</sub></td>
+    <td align="center"><b>Encyclopedia</b><br/><sub>Every species with a color-coded risk level</sub></td>
+    <td align="center"><b>Hospitals</b><br/><sub>14 poison-control units nationwide</sub></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="docs/images/map_route.jpg"><img src="docs/images/map_route.jpg" alt="Route to the nearest hospital" /></a></td>
+    <td align="center"><a href="docs/images/community_reports.jpg"><img src="docs/images/community_reports.jpg" alt="Community sighting reports" /></a></td>
+    <td align="center"><a href="docs/images/share_report.jpg"><img src="docs/images/share_report.jpg" alt="Share a sighting with photos" /></a></td>
+  </tr>
+  <tr>
+    <td align="center"><b>Route</b><br/><sub>Driving directions with distance and ETA</sub></td>
+    <td align="center"><b>Community</b><br/><sub>Sightings with a Safe or Venomous tag and confidence</sub></td>
+    <td align="center"><b>Share</b><br/><sub>Pin the spot, describe it, add up to 5 photos</sub></td>
+  </tr>
+</table>
 
-</div>
+<sub>Click any screenshot to open it full size. Prefer motion? <a href="https://drive.google.com/file/d/1yE4gGs6ZT6XtZQQ2YZ_kCCu6VTWZZeLD/view?usp=sharing"><b>Watch the demo video</b></a>.</sub>
 
-## Features
+| Feature | What it does |
+|---|---|
+| **On-device identification** | A YOLO model (TensorFlow Lite, 640×640 input) recognizes 25 Philippine species right on the phone. It works with no signal. |
+| **Venom risk at a glance** | Each species is rated None, Mild, Moderate, or Extreme, with its venom type, behavior, habitat, and range. |
+| **First-aid guide** | Signs and symptoms of envenomation, what to do, and what *not* to do after a bite. |
+| **Anti-venom finder** | A Mapbox map of 14 hospitals and poison-control units. One tap finds the nearest one and draws the route. |
+| **Community map** | Share a sighting with its location, a description, and photos. Everyone sees it on the shared map and feed. |
+| **History that survives offline** | Every classification is saved to SQLite on the phone, then synced to your account when you're back online. |
+| **Google Sign-In** | One-tap sign-in through Firebase Authentication. |
 
-<details open>
-<summary><b>On-device AI snake classification</b></summary>
-<br>
+## How it works
 
-<img src="docs/images/detect_options.jpg" width="200" align="right" alt="Choose camera or gallery">
+<img src="docs/diagrams/how-it-works.svg" alt="How it works: 1 snap, 2 identify on-device, 3 assess risk, 4 get help" width="100%" />
 
-- A custom-trained **YOLO** detector exported to **TensorFlow Lite** (`float32`, 640×640 input) runs entirely **on the phone**, so identification still works without signal.
-- It recognizes **25 snake species found in the Philippines**, from the Philippine cobra and king cobra to harmless species like the Luzon dwarf snake.
-- You can take a photo with the guided camera frame or upload one from the gallery.
-- Confidence threshold `0.5` with non-max suppression (IoU `0.45`).
+## System architecture
 
-<br clear="right">
+<img src="docs/diagrams/system-flow.svg" alt="On the phone: camera, YOLO TFLite model, bundled species and hospital data, SQLite history. In the cloud: Firebase Auth, Cloud Firestore, Mapbox" width="100%" />
+
+Everything needed to **identify a snake and decide what to do** lives on the phone: the model, the species profiles, the first-aid guide, and the hospital list. A bite can happen far from any signal, so the critical path never waits on the network. The cloud is used only for things that need other people or live data: signing in, the community map, syncing your history, and driving directions.
+
+## Under the hood
+
+Click a section to expand it.
+
+<details>
+<summary><b>What happens when you take a photo</b></summary>
+<br/>
+
+```mermaid
+sequenceDiagram
+    autonumber
+    actor You
+    participant App as SnakeAI app
+    participant Model as YOLO (TFLite)
+    participant Data as Species data (JSON)
+    participant DB as SQLite
+
+    You->>App: Take a photo or pick one from the gallery
+    App->>App: Resize to 640×640, normalize pixels
+    App->>Model: Run inference on-device
+    Model-->>App: Boxes, classes, scores
+    App->>App: Keep confidence ≥ 0.5,<br/>non-max suppression (IoU 0.45)
+    App->>Data: Look up the species profile
+    Data-->>App: Name, venom risk, habitat, first aid
+    App->>You: Species, risk level and safety guide
+    App->>DB: Save to history (isSynced = 0)
+```
+
 </details>
 
 <details>
-<summary><b>Venom risk and species encyclopedia</b></summary>
-<br>
+<summary><b>Finding the nearest anti-venom</b></summary>
+<br/>
 
-<img src="docs/images/snake_classes.jpg" width="200" align="right" alt="Snake classes list">
+```mermaid
+flowchart LR
+    A([Tap 'Find Nearest Hospital']) --> B{Location<br/>permission?}
+    B -- No --> P[Ask for permission<br/>or open settings] --> B
+    B -- Yes --> C[Get GPS position]
+    C --> D[Haversine distance<br/>to all 14 hospitals]
+    D --> E[Show nearest:<br/>unit, address, contacts]
+    E --> F[Mapbox Directions API]
+    F --> G([Route on map<br/>with distance and ETA])
+```
 
-- Every species has a profile with its common and scientific name, description, geographic range, habitat, and behavior.
-- A color-coded **venom toxicity rating** runs from *None* through *Mild*, *Moderate*, and *Extreme*, with the venom type (for example neurotoxic).
-- A **safety awareness guide** covers signs and symptoms of envenomation and what to do (and not do) after a bite.
-
-<br clear="right">
 </details>
 
 <details>
-<summary><b>Anti-venom hospital finder</b></summary>
-<br>
+<summary><b>Sharing a sighting with the community</b></summary>
+<br/>
 
-<img src="docs/images/map_hospitals.jpg" width="200" align="right" alt="Hospitals on the map">
+```mermaid
+sequenceDiagram
+    actor You
+    participant App as SnakeAI app
+    participant FS as Cloud Firestore
+    actor Others as Other users
 
-- A **Mapbox** map of **14 hospitals and poison-control units** across Luzon, Visayas, and Mindanao, each with its unit name, address, and contact numbers.
-- One tap gives **driving directions** with distance and ETA from your current location (Mapbox Directions API).
-- You can search any location in the Philippines.
+    You->>App: Share a classified snake
+    App->>You: Pin the location on the map
+    You->>App: Description (optional) and up to 5 photos
+    App->>App: Encode photos as base64
+    App->>FS: Add to snake_reports
+    FS-->>Others: Appears on the community map and feed
+```
 
-<br clear="right">
 </details>
 
 <details>
-<summary><b>Community sighting reports</b></summary>
-<br>
+<summary><b>Offline history and sync</b></summary>
+<br/>
 
-<img src="docs/images/community_reports.jpg" width="200" align="right" alt="Community reports feed">
+```mermaid
+flowchart LR
+    A([Classify a snake]) --> B[(SQLite<br/>isSynced = 0)]
+    B --> C{Tap Sync on<br/>History page}
+    C --> D{Internet?}
+    D -- No --> E[Stay local and<br/>try again later]
+    D -- Yes --> F[Upload each unsynced report<br/>to users/uid/classification_reports]
+    F --> G[(Mark isSynced = 1)]
+```
 
-- You can share a classified sighting to the community map with a pinned location, a description, and up to 5 extra photos.
-- Each report shows the species, a *Safe* or *Venomous* tag, the model's confidence, coordinates, and the date.
-- Reports are stored in **Cloud Firestore**, and nearby sightings are found with a Haversine distance filter.
-
-<table><tr>
-<td align="center"><img src="docs/images/pin_location.jpg" width="160" alt="Pin location"><br><sub>Pin the location</sub></td>
-<td align="center"><img src="docs/images/share_report.jpg" width="160" alt="Share report"><br><sub>Share with photos</sub></td>
-</tr></table>
-
-<br clear="right">
 </details>
 
 <details>
-<summary><b>Accounts and classification history</b></summary>
-<br>
+<summary><b>The 25 species it recognizes</b></summary>
+<br/>
 
-- **Google Sign-In** through Firebase Authentication.
-- Every classification is saved locally in **SQLite** so your history is available offline, then synced to Firestore under your account.
+| Risk | Species |
+|---|---|
+| **Extreme** | King cobra · Philippine cobra · Philippine pit viper |
+| **Moderate** | Barred coral snake · North Philippine temple pit viper |
+| **Mild** | Boie's keelback · Dog-toothed cat snake · Mangrove cat snake · Paradise tree snake · Philippine blunt-headed cat snake · Philippine cat snake · Philippine whip snake |
+| **None** | Gervais' worm snake · Günther's Philippine shrub snake · Luzon bronzeback treesnake · Luzon dwarf snake · Müller's wolf snake · Northern short-headed snake · Philippine bronzeback treesnake · Philippine stripe-lipped snake · Red-tailed green rat snake · Reddish rat snake · Reinhardt's lined snake · Reticulated python · Smooth-scaled mountain rat snake |
+
+More than half of these are harmless. Knowing which one you're looking at keeps people safe **and** keeps harmless snakes from being killed out of fear.
+
+</details>
+
+<details>
+<summary><b>Data layout</b></summary>
+<br/>
+
+```text
+Cloud Firestore
+├── snake_reports/<id>                          community sightings
+│     { snakeName, scientificName, isVenomous, venomToxicity, confidence,
+│       latitude, longitude, description, imageBase64List, userName, createdAt }
+└── users/<uid>/classification_reports/<id>     your synced history
+
+On the phone
+├── SQLite: classification_reports              offline history (isSynced, syncedAt)
+├── lib/domain/models/best_float32.tflite       YOLO weights + labels.txt
+└── lib/data/datasources/*.json                 species profiles, first aid
+    assets/data/hospitals.json                  14 hospitals
+```
 
 </details>
 
 ## Presented at COIL 2025
 
-SnakeAI was co-presented at the **8th Collaborative Online International Learning (COIL) Program** between **Kyushu Sangyo University**, Fukuoka, Japan, and **MSU-Iligan Institute of Technology**, Iligan City, Philippines, on **November 15, 2025**. The research proposes an AI-driven system for snake species classification and anti-venom sourcing to support public safety and biodiversity conservation.
+SnakeAI was co-presented at the **8th Collaborative Online International Learning (COIL) Program** between **Kyushu Sangyo University** (Fukuoka, Japan) and **MSU-Iligan Institute of Technology** (Iligan City, Philippines) on **November 15, 2025**. The research proposes an AI-driven system for snake species classification and anti-venom sourcing to support public safety and biodiversity conservation.
 
 <table>
   <tr>
-    <td align="center" width="50%"><img src="docs/images/coil_speaking.jpg" alt="Presenting SnakeAI at COIL 2025"></td>
-    <td align="center" width="50%"><img src="docs/images/coil_group_pic.jpg" alt="SnakeAI presenters receiving certificates"></td>
+    <td align="center" width="50%"><img src="docs/images/coil_speaking.jpg" alt="Presenting SnakeAI at COIL 2025" /></td>
+    <td align="center" width="50%"><img src="docs/images/coil_group_pic.jpg" alt="SnakeAI presenters receiving certificates" /></td>
+  </tr>
+  <tr>
+    <td align="center"><sub><b>Presenting SnakeAI</b></sub></td>
+    <td align="center"><sub><b>Receiving the certificates</b></sub></td>
   </tr>
 </table>
 
 <details>
 <summary><b>Certificate of Appreciation</b></summary>
-<br>
+<br/>
 <div align="center">
-<img src="docs/images/coil_certificate.jpg" width="420" alt="Certificate of Appreciation, 8th COIL Program">
+<img src="docs/images/coil_certificate.jpg" width="420" alt="Certificate of Appreciation, 8th COIL Program" />
 </div>
 </details>
 
 ## Tech stack
 
-| Layer | Technology |
-| --- | --- |
-| App | Flutter (Dart 3.9), Material 3 |
-| State and navigation | `flutter_bloc`, `go_router` with typed routes |
-| Dependency injection | `get_it` + `injectable` |
-| AI model | YOLO → TensorFlow Lite via `tflite_flutter`, trained on a Roboflow dataset |
-| Camera and images | `camera`, `image_picker`, `image` |
-| Maps and location | `mapbox_maps_flutter`, Mapbox Directions API, `geolocator` |
-| Backend | Firebase Auth (Google Sign-In), Cloud Firestore, Firebase Storage |
+| Layer | Tools |
+|---|---|
+| App | Flutter (Material 3), Dart `^3.9.2` |
+| Architecture | `flutter_bloc`, `go_router` (typed routes), `get_it` + `injectable` |
+| AI | YOLO exported to TensorFlow Lite, run with `tflite_flutter`; dataset from Roboflow |
+| Camera | `camera`, `image_picker`, `image` |
+| Maps | `mapbox_maps_flutter`, Mapbox Directions API, `geolocator` |
+| Backend | Firebase Authentication (Google Sign-In), Cloud Firestore |
 | Local storage | `sqflite`, `shared_preferences` |
 
-## Getting started
+<details>
+<summary><b>Project structure</b></summary>
+<br/>
 
-**Prerequisites:** Flutter SDK (Dart ≥ 3.9), Android Studio or Xcode, and a physical device (recommended for the camera).
+```text
+lib/
+├── core/                 DI container, Mapbox constants, network checks
+├── data/datasources/     species profiles, first-aid guide (JSON)
+├── domain/
+│   ├── models/           TFLite model + labels, report and hospital models
+│   └── services/         YOLO detector, auth, hospitals, Mapbox, reports, sync
+├── presentation/
+│   ├── pages/            camera, results, map, reports, species, profile
+│   └── widgets/          safety info
+├── routes.dart           typed go_router routes
+└── main.dart
+assets/data/hospitals.json
+docs/
+├── diagrams/             animated SVGs used in this README
+└── images/               screenshots and COIL photos
+```
+
+</details>
+
+## Run it yourself
+
+**You'll need:** the Flutter SDK (Dart `^3.9.2`), Android Studio or Xcode, and a physical phone for the camera.
 
 ```bash
 git clone https://github.com/andreypUP/snake_ai_app.git
 cd snake_ai_app
 flutter pub get
-dart run build_runner build --delete-conflicting-outputs   # routes, DI, JSON models
+
+# generate routes, dependency injection and JSON models
+dart run build_runner build --delete-conflicting-outputs
+
 flutter run
 ```
 
-> [!NOTE]
-> To use **your own** Firebase project, run `flutterfire configure`. To use your own Mapbox account, replace the public token in `lib/core/constants/mapbox_constants.dart`.
+<details>
+<summary><b>Use your own Firebase and Mapbox</b></summary>
+<br/>
 
-## Project structure
+- **Firebase:** run `flutterfire configure` to regenerate `lib/firebase_options.dart` and `android/app/google-services.json`, then turn on **Google Sign-In** and **Cloud Firestore** in the console.
+- **Mapbox:** put your public token (`pk.…`) in `lib/core/constants/mapbox_constants.dart` and `android/app/src/main/AndroidManifest.xml`.
 
-```text
-lib/
-├── core/                 # DI container, constants, network checks
-├── data/datasources/     # Species info, hospitals, safety guide (JSON)
-├── domain/
-│   ├── models/           # TFLite model + labels, report/hospital/classification models
-│   └── services/         # YOLO detector, auth, Mapbox, reports, sync
-├── presentation/
-│   ├── pages/            # Camera, results, map, reports, species, profile
-│   └── widgets/
-└── routes.dart           # Typed go_router routes
-```
+</details>
 
 ## Team
 
 | | |
-| --- | --- |
-| **Mark Andrey G. Acebu** | Developer and co-presenter. College of Engineering, MSU-IIT |
-| **Janna Joyce E. Jumao-as** | Co-presenter. College of Engineering, MSU-IIT |
+|---|---|
+| **Mark Andrey G. Acebu** | Developer and co-presenter · College of Engineering, MSU-IIT |
+| **Janna Joyce E. Jumao-as** | Co-presenter · College of Engineering, MSU-IIT |
 
 ## Acknowledgments
 
 - **Kyushu Sangyo University** and **MSU-Iligan Institute of Technology** for the COIL Program
-- **ICpEP.SE MSU-IIT** (Institute of Computer Engineers of the Philippines, Student Edition)
+- **ICpEP.SE MSU-IIT**, Institute of Computer Engineers of the Philippines, Student Edition
 - Snake image dataset via [Roboflow Universe](https://universe.roboflow.com/)
 
 <div align="center">
+<br/>
 <sub>Built in the Philippines for public safety and snake conservation.</sub>
 </div>

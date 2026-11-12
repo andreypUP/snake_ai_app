@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 600" width="1200" height="600" role="img" aria-label="SnakeAI system architecture: camera, YOLO TFLite model, bundled species and hospital data and SQLite history all run on the phone offline; the app syncs with Firebase Auth, Cloud Firestore and Mapbox over the internet">
+  <style>
+    .t{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
+    .card{fill:#161b22;stroke:#30363d;stroke-width:1.5}
+    .lbl{font-size:16px;font-weight:700;fill:#e6edf3}
+    .sub{font-size:13px;fill:#9198a1}
+    .cap{font-size:12px;font-weight:700;letter-spacing:1.5px;fill:#9198a1}
+    .lane{fill:none;stroke:#30363d;stroke-width:2}
+    .wire{fill:none;stroke-width:3;stroke-linecap:round}
+    .pulse{fill:none;stroke-width:3;stroke-linecap:round;stroke-dasharray:10 150;animation:pulse 2s linear infinite}
+    @keyframes pulse{from{stroke-dashoffset:160}to{stroke-dashoffset:0}}
+    .rev{animation-direction:reverse}
+    .p2{animation-delay:.5s}.p3{animation-delay:1s}
+    .scan{animation:scan 2s ease-in-out infinite}
+    @keyframes scan{0%,100%{transform:translateY(0)}50%{transform:translateY(50px)}}
+    @media (prefers-reduced-motion:reduce){.pulse,.scan{animation:none}}
+  </style>
+
+  <rect width="1200" height="600" rx="18" fill="#0d1117"/>
+  <rect x="0.5" y="0.5" width="1199" height="599" rx="18" fill="none" stroke="#30363d"/>
+
+  <!-- ================= on-device panel ================= -->
+  <rect x="40" y="40" width="380" height="440" rx="16" fill="none" stroke="#3fb950" stroke-opacity=".5" stroke-dasharray="6 6"/>
+  <text x="64" y="72" class="t cap" fill="#7ee2a8">ON THE PHONE · WORKS OFFLINE</text>
+
+  <!-- wires into app -->
+  <path class="wire" stroke="#e6edf3" d="M400 125 C450 125 440 252 490 252"/>
+  <path class="wire" stroke="#7ee2a8" d="M400 225 C450 225 440 270 490 270"/>
+  <path class="wire" stroke="#F2A65A" d="M400 325 C450 325 440 288 490 288"/>
+  <path class="wire" stroke="#d2a8ff" d="M400 425 C450 425 440 306 490 306"/>
+  <path class="pulse" stroke="#ffffff" d="M400 125 C450 125 440 252 490 252"/>
+  <path class="pulse rev p2" stroke="#c8f5da" d="M400 225 C450 225 440 270 490 270"/>
+  <path class="pulse rev p3" stroke="#ffd8b0" d="M400 325 C450 325 440 288 490 288"/>
+  <path class="pulse p2" stroke="#ecdcff" d="M400 425 C450 425 440 306 490 306"/>
+
+  <!-- camera -->
+  <g transform="translate(60 90)">
+    <rect class="card" width="340" height="70" rx="12"/>
+    <rect x="14" y="20" width="48" height="34" rx="6" fill="#0d1117" stroke="#e6edf3" stroke-width="2.5"/>
+    <rect x="28" y="14" width="18" height="8" rx="2" fill="#e6edf3"/>
+    <circle cx="38" cy="37" r="9" fill="none" stroke="#e6edf3" stroke-width="2.5"/>
+    <text x="74" y="31" class="t lbl">Camera / gallery</text>
+    <text x="74" y="52" class="t sub">Guided frame or photo upload</text>
+  </g>
+  <!-- model -->
+  <g transform="translate(60 190)">
+    <rect class="card" width="340" height="70" rx="12"/>
+    <rect x="14" y="12" width="48" height="46" rx="6" fill="#13261b" stroke="#7ee2a8" stroke-width="2"/>
+    <text x="38" y="40" class="t" font-size="11" font-weight="800" fill="#7ee2a8" text-anchor="middle">YOLO</text>
+    <rect class="scan" x="14" y="12" width="48" height="8" fill="#7ee2a8" opacity=".3"/>
+    <text x="74" y="31" class="t lbl">YOLO model (TFLite)</text>
+    <text x="74" y="52" class="t sub">25 classes · conf 0.5 · NMS IoU 0.45</text>
+  </g>
+  <!-- data -->
+  <g transform="translate(60 290)">
+    <rect class="card" width="340" height="70" rx="12"/>
+    <path d="M18 18 h30 l10 10 v30 h-40 Z" fill="#0d1117" stroke="#F2A65A" stroke-width="2.5" stroke-linejoin="round"/>
+    <text x="38" y="48" class="t" font-size="10" font-weight="800" fill="#F2A65A" text-anchor="middle">{ }</text>
+    <text x="74" y="31" class="t lbl">Species, safety, hospitals</text>
+    <text x="74" y="52" class="t sub">Bundled JSON · 14 poison-control units</text>
+  </g>
+  <!-- sqlite -->
+  <g transform="translate(60 390)">
+    <rect class="card" width="340" height="70" rx="12"/>
+    <ellipse cx="38" cy="20" rx="20" ry="7" fill="#0d1117" stroke="#d2a8ff" stroke-width="2.5"/>
+    <path d="M18 20 v30 a20 7 0 0 0 40 0 v-30" fill="none" stroke="#d2a8ff" stroke-width="2.5"/>
+    <path d="M18 35 a20 7 0 0 0 40 0" fill="none" stroke="#d2a8ff" stroke-width="2"/>
+    <text x="74" y="31" class="t lbl">SQLite history</text>
+    <text x="74" y="52" class="t sub">Every classification saved locally</text>
+  </g>
+
+  <!-- ================= app ================= -->
+  <g transform="translate(490 190)">
+    <rect width="160" height="180" rx="22" fill="#0d1117" stroke="#7ee2a8" stroke-width="3"/>
+    <rect x="62" y="10" width="36" height="5" rx="2.5" fill="#30363d"/>
+    <text x="80" y="48" class="t" font-size="18" font-weight="800" text-anchor="middle"><tspan fill="#7ee2a8">Snake</tspan><tspan fill="#FAE6AA">AI</tspan></text>
+    <rect x="18" y="64" width="124" height="16" rx="4" fill="#30363d"/>
+    <rect x="18" y="86" width="124" height="16" rx="4" fill="#30363d"/>
+    <rect x="18" y="108" width="80" height="16" rx="4" fill="#30363d"/>
+    <rect x="18" y="138" width="124" height="28" rx="8" fill="#3fb950"/>
+    <text x="80" y="157" class="t" font-size="12" font-weight="800" fill="#0d1117" text-anchor="middle">TAKE PHOTO</text>
+    <text x="80" y="208" class="t lbl" text-anchor="middle">Flutter app</text>
+    <text x="80" y="228" class="t sub" text-anchor="middle">BLoC · go_router · get_it</text>
+  </g>
+
+  <!-- ================= cloud lanes ================= -->
+  <path id="l1" class="lane" d="M650 250 C730 250 740 125 820 125"/>
+  <path id="l2" class="lane" d="M650 280 H820"/>
+  <path id="l3" class="lane" d="M650 310 C730 310 740 435 820 435"/>
+  <text x="690" y="270" class="t cap">INTERNET</text>
+
+  <g fill="#F2A65A">
+    <circle r="6"><animateMotion dur="2.8s" repeatCount="indefinite"><mpath href="#l1"/></animateMotion></circle>
+    <circle r="6"><animateMotion dur="2.8s" begin=".7s" repeatCount="indefinite"><mpath href="#l2"/></animateMotion></circle>
+    <circle r="6"><animateMotion dur="2.8s" begin="1.4s" repeatCount="indefinite"><mpath href="#l3"/></animateMotion></circle>
+  </g>
+  <g fill="#79c0ff">
+    <rect x="-6" y="-6" width="12" height="12" rx="3"><animateMotion dur="2.8s" begin="1.4s" repeatCount="indefinite" keyPoints="1;0" keyTimes="0;1" calcMode="linear"><mpath href="#l2"/></animateMotion></rect>
+    <rect x="-6" y="-6" width="12" height="12" rx="3"><animateMotion dur="2.8s" begin=".2s" repeatCount="indefinite" keyPoints="1;0" keyTimes="0;1" calcMode="linear"><mpath href="#l3"/></animateMotion></rect>
+  </g>
+
+  <!-- auth -->
+  <g transform="translate(820 90)">
+    <rect class="card" width="340" height="70" rx="12"/>
+    <path d="M38 14 l18 7 v13 c0 12 -8 20 -18 24 c-10 -4 -18 -12 -18 -24 v-13 Z" fill="#0d1117" stroke="#F2A65A" stroke-width="2.5" stroke-linejoin="round"/>
+    <path d="M30 36 l6 6 l11 -12" stroke="#F2A65A" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="74" y="31" class="t lbl">Firebase Auth</text>
+    <text x="74" y="52" class="t sub">Google Sign-In</text>
+  </g>
+  <!-- firestore -->
+  <g transform="translate(820 245)">
+    <rect class="card" width="340" height="70" rx="12"/>
+    <g fill="#F2A65A"><rect x="16" y="16" width="44" height="10" rx="3"/><rect x="16" y="30" width="44" height="10" rx="3" opacity=".75"/><rect x="16" y="44" width="44" height="10" rx="3" opacity=".5"/></g>
+    <text x="74" y="31" class="t lbl">Cloud Firestore</text>
+    <text x="74" y="52" class="t sub">Community reports · synced history</text>
+  </g>
+  <!-- mapbox -->
+  <g transform="translate(820 400)">
+    <rect class="card" width="340" height="70" rx="12"/>
+    <path d="M38 58 c-14 -16 -18 -22 -18 -30 a18 18 0 0 1 36 0 c0 8 -4 14 -18 30 Z" fill="#0d1117" stroke="#a5b4fc" stroke-width="2.5"/>
+    <circle cx="38" cy="28" r="6" fill="#a5b4fc"/>
+    <text x="74" y="31" class="t lbl">Mapbox</text>
+    <text x="74" y="52" class="t sub">Maps SDK · Directions API</text>
+  </g>
+  <text x="990" y="72" class="t cap" text-anchor="middle">CLOUD · WHEN ONLINE</text>
+
+  <!-- legend -->
+  <g transform="translate(40 530)">
+    <circle cx="10" cy="10" r="6" fill="#F2A65A"/>
+    <text x="26" y="15" class="t sub" fill="#c9d1d9">App → cloud: <tspan fill="#9198a1">sign-in, shared sightings, history sync, route requests</tspan></text>
+    <rect x="574" y="4" width="12" height="12" rx="3" fill="#79c0ff"/>
+    <text x="594" y="15" class="t sub" fill="#c9d1d9">Cloud → app: <tspan fill="#9198a1">community map, routes with distance and ETA</tspan></text>
+  </g>
+</svg>

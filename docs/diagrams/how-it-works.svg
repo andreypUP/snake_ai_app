@@ -1,0 +1,116 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 620" width="1200" height="620" role="img" aria-label="How SnakeAI works: 1 snap a photo, 2 the on-device model identifies the species, 3 see the venom risk and first aid, 4 get directions to the nearest anti-venom hospital">
+  <defs>
+    <marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0 0 L10 5 L0 10 Z" fill="#7ee2a8"/>
+    </marker>
+  </defs>
+  <style>
+    .t{font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif}
+    .card{fill:#161b22;stroke:#30363d;stroke-width:1.5}
+    .ring{fill:#13261b}
+    .h{font-size:24px;font-weight:700;fill:#e6edf3}
+    .d{font-size:16px;fill:#9198a1}
+    .n{font-size:18px;font-weight:700;fill:#0d1117}
+    .flow{fill:none;stroke:#7ee2a8;stroke-width:3;stroke-dasharray:8 8;animation:flow 1s linear infinite}
+    @keyframes flow{to{stroke-dashoffset:-16}}
+    .tap{transform-box:fill-box;transform-origin:center;animation:tap 2s ease-out infinite}
+    @keyframes tap{0%{transform:scale(1);opacity:.9}70%{transform:scale(2.2);opacity:0}100%{opacity:0}}
+    .scan{animation:scan 2s ease-in-out infinite}
+    @keyframes scan{0%,100%{transform:translateY(0)}50%{transform:translateY(64px)}}
+    .node{animation:node 1.5s ease-in-out infinite}
+    .d1{animation-delay:.25s}.d2{animation-delay:.5s}.d3{animation-delay:.75s}
+    @keyframes node{0%,100%{fill:#30363d}50%{fill:#7ee2a8}}
+    .needle{transform-box:fill-box;transform-origin:50% 100%;animation:needle 3.2s ease-in-out infinite}
+    @keyframes needle{0%,100%{transform:rotate(-70deg)}45%,80%{transform:rotate(62deg)}}
+    .route{fill:none;stroke:#79c0ff;stroke-width:4;stroke-linecap:round;stroke-dasharray:150;animation:route 2.6s ease-in-out infinite}
+    @keyframes route{0%{stroke-dashoffset:150}70%,100%{stroke-dashoffset:0}}
+    .pin{transform-box:fill-box;transform-origin:50% 100%;animation:bounce 1.3s ease-in-out infinite}
+    @keyframes bounce{0%,100%{transform:translateY(0)}50%{transform:translateY(-6px)}}
+    @media (prefers-reduced-motion:reduce){.flow,.tap,.scan,.node,.needle,.route,.pin{animation:none}}
+  </style>
+
+  <rect width="1200" height="620" rx="18" fill="#0d1117"/>
+  <rect x="0.5" y="0.5" width="1199" height="619" rx="18" fill="none" stroke="#30363d"/>
+
+  <!-- connecting arrows -->
+  <path class="flow" d="M545 150 H648" marker-end="url(#ah)"/>
+  <path class="flow" d="M900 285 V328" marker-end="url(#ah)"/>
+  <path class="flow" d="M655 470 H552" marker-end="url(#ah)"/>
+
+  <!-- centre hub -->
+  <rect x="530" y="288" width="140" height="44" rx="22" fill="#0d1117" stroke="#7ee2a8" stroke-width="2"/>
+  <text x="600" y="316" class="t" font-size="15" font-weight="700" fill="#7ee2a8" text-anchor="middle">On-device AI</text>
+
+  <!-- 01 Snap -->
+  <g transform="translate(60 40)">
+    <rect class="card" width="480" height="240" rx="16"/>
+    <circle class="ring" cx="110" cy="122" r="76"/>
+    <rect x="80" y="62" width="60" height="114" rx="12" fill="#0d1117" stroke="#7ee2a8" stroke-width="3"/>
+    <rect x="100" y="70" width="20" height="4" rx="2" fill="#30363d"/>
+    <path d="M90 86 v-6 h6 M124 80 h6 v6 M130 120 v6 h-6 M96 126 h-6 v-6" stroke="#7ee2a8" stroke-width="2" fill="none"/>
+    <path d="M94 116 q8 -16 16 -4 t16 -10" stroke="#c98a4b" stroke-width="5" fill="none" stroke-linecap="round"/>
+    <circle cx="110" cy="152" r="12" fill="#e6edf3" opacity=".35" class="tap"/>
+    <circle cx="110" cy="152" r="12" fill="none" stroke="#e6edf3" stroke-width="3"/>
+    <circle cx="110" cy="152" r="8" fill="#e6edf3"/>
+    <circle cx="28" cy="28" r="18" fill="#7ee2a8"/>
+    <text x="28" y="34" class="t n" text-anchor="middle">1</text>
+    <text x="210" y="96" class="t h">Snap</text>
+    <text class="t d"><tspan x="210" y="128">Point the camera at the snake</tspan><tspan x="210" y="150">inside the guide frame, or</tspan><tspan x="210" y="172">upload a photo from your</tspan><tspan x="210" y="194">gallery.</tspan></text>
+  </g>
+
+  <!-- 02 Identify -->
+  <g transform="translate(660 40)">
+    <rect class="card" width="480" height="240" rx="16"/>
+    <circle class="ring" cx="110" cy="122" r="76"/>
+    <rect x="66" y="80" width="88" height="88" rx="8" fill="#0d1117" stroke="#30363d" stroke-width="2"/>
+    <g>
+      <circle fill="#30363d" class="node" cx="84" cy="98" r="6"/><circle fill="#30363d" class="node d1" cx="84" cy="124" r="6"/><circle fill="#30363d" class="node d2" cx="84" cy="150" r="6"/>
+      <circle fill="#30363d" class="node d1" cx="110" cy="110" r="6"/><circle fill="#30363d" class="node d2" cx="110" cy="138" r="6"/>
+      <circle fill="#30363d" class="node d3" cx="136" cy="124" r="6"/>
+    </g>
+    <g stroke="#30363d" stroke-width="1.5">
+      <path d="M84 98 L110 110 M84 98 L110 138 M84 124 L110 110 M84 124 L110 138 M84 150 L110 110 M84 150 L110 138 M110 110 L136 124 M110 138 L136 124"/>
+    </g>
+    <rect class="scan" x="66" y="80" width="88" height="24" fill="#7ee2a8" opacity=".18"/>
+    <text x="110" y="70" class="t" font-size="12" font-weight="700" fill="#7ee2a8" text-anchor="middle">YOLO · 640×640</text>
+    <circle cx="28" cy="28" r="18" fill="#7ee2a8"/>
+    <text x="28" y="34" class="t n" text-anchor="middle">2</text>
+    <text x="210" y="96" class="t h">Identify</text>
+    <text class="t d"><tspan x="210" y="128">A YOLO model runs on the</tspan><tspan x="210" y="150">phone (TFLite) and names one</tspan><tspan x="210" y="172">of 25 Philippine species.</tspan><tspan x="210" y="194">No internet needed.</tspan></text>
+  </g>
+
+  <!-- 03 Assess risk -->
+  <g transform="translate(660 340)">
+    <rect class="card" width="480" height="240" rx="16"/>
+    <circle class="ring" cx="110" cy="122" r="76"/>
+    <path d="M58 150 A52 52 0 0 1 75.2 111.4" fill="none" stroke="#3fb950" stroke-width="12"/>
+    <path d="M77.5 109.4 A52 52 0 0 1 108 98" fill="none" stroke="#d29922" stroke-width="12"/>
+    <path d="M112 98 A52 52 0 0 1 142.5 109.4" fill="none" stroke="#F2A65A" stroke-width="12"/>
+    <path d="M144.8 111.4 A52 52 0 0 1 162 150" fill="none" stroke="#f47067" stroke-width="12"/>
+    <g class="needle"><path d="M110 150 L110 106" stroke="#e6edf3" stroke-width="4" stroke-linecap="round"/></g>
+    <circle cx="110" cy="150" r="7" fill="#e6edf3"/>
+    <text x="110" y="182" class="t" font-size="12" font-weight="800" fill="#f47067" text-anchor="middle" letter-spacing="1">EXTREME RISK</text>
+    <circle cx="28" cy="28" r="18" fill="#7ee2a8"/>
+    <text x="28" y="34" class="t n" text-anchor="middle">3</text>
+    <text x="210" y="96" class="t h">Assess risk</text>
+    <text class="t d"><tspan x="210" y="128">See the venom rating (None,</tspan><tspan x="210" y="150">Mild, Moderate, Extreme), the</tspan><tspan x="210" y="172">venom type, and first-aid</tspan><tspan x="210" y="194">do's and don'ts.</tspan></text>
+  </g>
+
+  <!-- 04 Get help -->
+  <g transform="translate(60 340)">
+    <rect class="card" width="480" height="240" rx="16"/>
+    <circle class="ring" cx="110" cy="122" r="76"/>
+    <rect x="52" y="68" width="116" height="108" rx="10" fill="#0f2233" stroke="#30363d"/>
+    <path d="M52 140 Q90 120 120 132 T168 118" stroke="#1d3a2a" stroke-width="18" fill="none"/>
+    <path class="route" d="M74 158 C90 150 96 120 116 118 S142 100 146 92"/>
+    <circle cx="74" cy="158" r="7" fill="#79c0ff" stroke="#0d1117" stroke-width="2"/>
+    <g class="pin">
+      <path d="M146 96 c-12 -14 -16 -20 -16 -28 a16 16 0 0 1 32 0 c0 8 -4 14 -16 28 Z" fill="#f47067"/>
+      <path d="M146 60 v14 M139 67 h14" stroke="#fff" stroke-width="3.5" stroke-linecap="round"/>
+    </g>
+    <circle cx="28" cy="28" r="18" fill="#7ee2a8"/>
+    <text x="28" y="34" class="t n" text-anchor="middle">4</text>
+    <text x="210" y="96" class="t h">Get help</text>
+    <text class="t d"><tspan x="210" y="128">Find the nearest of 14 poison</tspan><tspan x="210" y="150">control units and get driving</tspan><tspan x="210" y="172">directions with distance and</tspan><tspan x="210" y="194">ETA from Mapbox.</tspan></text>
+  </g>
+</svg>
